@@ -1,0 +1,84 @@
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\IPExcelReport.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\IPExcelReport.pdb
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\IPExcelReport.xml
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\Interop.Excel.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\Interop.Office.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\IPCommon.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\CrystalDecisions.Shared.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\C1.Common.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\IPCommon.pdb
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\bin\IPCommon.xml
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\obj\Debug\IPExcelReport.dll.licenses
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\obj\Debug\IPExcelReport.dll
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\obj\Debug\IPExcelReport.xml
+C:\Users\AnZVanie\Documents\Visual Studio 2010\Projects\BKI_HRM\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\IPExcelReport.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\IPExcelReport.pdb
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\IPExcelReport.xml
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\Interop.Excel.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\Interop.Office.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\IPCommon.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\C1.Common.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\IPCommon.pdb
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\bin\IPCommon.xml
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.dll.licenses
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\1.My Project\BKIQL Kho\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPExcelReport.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPExcelReport.pdb
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPExcelReport.xml
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\Interop.Excel.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\Interop.Office.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPCommon.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\C1.Common.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPCommon.pdb
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPCommon.xml
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.dll.licenses
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\5.Projects\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.pdb
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPExcelReport.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPExcelReport.pdb
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPExcelReport.xml
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\Interop.Excel.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\Interop.Microsoft.Office.Core.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\Interop.Office.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPCommon.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\C1.Win.C1FlexGrid.Classic.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.Shared.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.Windows.Forms.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\C1.Common.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\CrystalDecisions.ReportSource.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPCommon.pdb
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\bin\IPCommon.xml
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.vbprojResolveAssemblyReference.cache
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.dll.licenses
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.dll
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.xml
+D:\3 PROJECTS\2. Inventory\SVN Inventory\03. SourceCode\IPExcelReport\obj\Debug\IPExcelReport.pdb
