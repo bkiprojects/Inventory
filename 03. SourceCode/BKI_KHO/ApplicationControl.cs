@@ -50,7 +50,7 @@ namespace BKI_KHO
                 {
                     CAppContext_201.InitializeContext(v_obj_login_info);
                     CAppContext_201.LoadDecentralizationByUserLogin();
-                    f399_MainMenu v_frm_main = new f399_MainMenu();
+                    F000_Menu v_frm_main = new F000_Menu();
                     v_frm_main.display(ref v_exitmode);
                     v_frm_main.Dispose();
                     // sau main form hiện thì login hoặc thóat
