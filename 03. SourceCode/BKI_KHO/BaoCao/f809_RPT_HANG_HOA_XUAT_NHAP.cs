@@ -254,12 +254,12 @@ namespace BKI_KHO
             this.m_lbl_title.Size = new System.Drawing.Size(686, 40);
             this.m_lbl_title.TabIndex = 37;
             this.m_lbl_title.Text = "CHI TIẾT XUẤT NHẬP HÀNG HÓA";
-            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(192, 50);
+            this.label1.Location = new System.Drawing.Point(15, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 38;
@@ -268,7 +268,7 @@ namespace BKI_KHO
             // m_lbl_tu_ngay
             // 
             this.m_lbl_tu_ngay.AutoSize = true;
-            this.m_lbl_tu_ngay.Location = new System.Drawing.Point(250, 50);
+            this.m_lbl_tu_ngay.Location = new System.Drawing.Point(73, 49);
             this.m_lbl_tu_ngay.Name = "m_lbl_tu_ngay";
             this.m_lbl_tu_ngay.Size = new System.Drawing.Size(16, 13);
             this.m_lbl_tu_ngay.TabIndex = 39;
@@ -277,7 +277,7 @@ namespace BKI_KHO
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(415, 50);
+            this.label3.Location = new System.Drawing.Point(238, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 40;
@@ -286,7 +286,7 @@ namespace BKI_KHO
             // m_lbl_den_ngay
             // 
             this.m_lbl_den_ngay.AutoSize = true;
-            this.m_lbl_den_ngay.Location = new System.Drawing.Point(480, 50);
+            this.m_lbl_den_ngay.Location = new System.Drawing.Point(303, 49);
             this.m_lbl_den_ngay.Name = "m_lbl_den_ngay";
             this.m_lbl_den_ngay.Size = new System.Drawing.Size(16, 13);
             this.m_lbl_den_ngay.TabIndex = 41;
@@ -295,7 +295,7 @@ namespace BKI_KHO
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 72);
+            this.label5.Location = new System.Drawing.Point(15, 72);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 42;
@@ -304,7 +304,7 @@ namespace BKI_KHO
             // m_lbl_nhom_hang
             // 
             this.m_lbl_nhom_hang.AutoSize = true;
-            this.m_lbl_nhom_hang.Location = new System.Drawing.Point(86, 72);
+            this.m_lbl_nhom_hang.Location = new System.Drawing.Point(89, 72);
             this.m_lbl_nhom_hang.Name = "m_lbl_nhom_hang";
             this.m_lbl_nhom_hang.Size = new System.Drawing.Size(16, 13);
             this.m_lbl_nhom_hang.TabIndex = 43;
@@ -315,7 +315,7 @@ namespace BKI_KHO
             this.m_lbl_so_du_dau.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.m_lbl_so_du_dau.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_lbl_so_du_dau.ForeColor = System.Drawing.Color.Blue;
-            this.m_lbl_so_du_dau.Location = new System.Drawing.Point(539, 89);
+            this.m_lbl_so_du_dau.Location = new System.Drawing.Point(105, 99);
             this.m_lbl_so_du_dau.Name = "m_lbl_so_du_dau";
             this.m_lbl_so_du_dau.Size = new System.Drawing.Size(126, 27);
             this.m_lbl_so_du_dau.TabIndex = 45;
@@ -337,7 +337,7 @@ namespace BKI_KHO
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(459, 96);
+            this.label2.Location = new System.Drawing.Point(15, 106);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 13);
             this.label2.TabIndex = 48;

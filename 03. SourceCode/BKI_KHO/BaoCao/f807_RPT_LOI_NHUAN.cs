@@ -243,7 +243,7 @@ namespace BKI_KHO
             this.m_txt_search.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.m_txt_search.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.m_txt_search.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.m_txt_search.Location = new System.Drawing.Point(151, 96);
+            this.m_txt_search.Location = new System.Drawing.Point(90, 93);
             this.m_txt_search.Name = "m_txt_search";
             this.m_txt_search.Size = new System.Drawing.Size(384, 20);
             this.m_txt_search.TabIndex = 2;
@@ -258,13 +258,13 @@ namespace BKI_KHO
             this.m_lbl_title.Size = new System.Drawing.Size(686, 40);
             this.m_lbl_title.TabIndex = 44;
             this.m_lbl_title.Text = "BÁO CÁO LỢI NHUẬN";
-            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 99);
+            this.label3.Location = new System.Drawing.Point(15, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 41;
@@ -279,7 +279,7 @@ namespace BKI_KHO
             this.m_cmd_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_search.ImageIndex = 5;
             this.m_cmd_search.ImageList = this.ImageList;
-            this.m_cmd_search.Location = new System.Drawing.Point(551, 91);
+            this.m_cmd_search.Location = new System.Drawing.Point(490, 88);
             this.m_cmd_search.Name = "m_cmd_search";
             this.m_cmd_search.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_search.TabIndex = 3;
@@ -291,7 +291,7 @@ namespace BKI_KHO
             this.m_dat_den_ngay.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.m_dat_den_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_den_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_den_ngay.Location = new System.Drawing.Point(426, 55);
+            this.m_dat_den_ngay.Location = new System.Drawing.Point(278, 56);
             this.m_dat_den_ngay.Name = "m_dat_den_ngay";
             this.m_dat_den_ngay.Size = new System.Drawing.Size(114, 20);
             this.m_dat_den_ngay.TabIndex = 1;
@@ -302,7 +302,7 @@ namespace BKI_KHO
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(367, 55);
+            this.label2.Location = new System.Drawing.Point(209, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 39;
@@ -313,7 +313,7 @@ namespace BKI_KHO
             this.m_dat_tu_ngay.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.m_dat_tu_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_tu_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_tu_ngay.Location = new System.Drawing.Point(172, 55);
+            this.m_dat_tu_ngay.Location = new System.Drawing.Point(67, 56);
             this.m_dat_tu_ngay.Name = "m_dat_tu_ngay";
             this.m_dat_tu_ngay.Size = new System.Drawing.Size(114, 20);
             this.m_dat_tu_ngay.TabIndex = 0;
@@ -324,7 +324,7 @@ namespace BKI_KHO
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(120, 55);
+            this.label1.Location = new System.Drawing.Point(15, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 37;

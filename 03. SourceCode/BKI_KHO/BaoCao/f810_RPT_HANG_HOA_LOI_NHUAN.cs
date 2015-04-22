@@ -235,7 +235,7 @@ namespace BKI_KHO
             // m_lbl_nhom_hang
             // 
             this.m_lbl_nhom_hang.AutoSize = true;
-            this.m_lbl_nhom_hang.Location = new System.Drawing.Point(86, 80);
+            this.m_lbl_nhom_hang.Location = new System.Drawing.Point(81, 78);
             this.m_lbl_nhom_hang.Name = "m_lbl_nhom_hang";
             this.m_lbl_nhom_hang.Size = new System.Drawing.Size(16, 13);
             this.m_lbl_nhom_hang.TabIndex = 47;
@@ -244,7 +244,7 @@ namespace BKI_KHO
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 80);
+            this.label5.Location = new System.Drawing.Point(7, 78);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 46;
@@ -253,7 +253,7 @@ namespace BKI_KHO
             // m_lbl_tu_ngay
             // 
             this.m_lbl_tu_ngay.AutoSize = true;
-            this.m_lbl_tu_ngay.Location = new System.Drawing.Point(252, 49);
+            this.m_lbl_tu_ngay.Location = new System.Drawing.Point(65, 53);
             this.m_lbl_tu_ngay.Name = "m_lbl_tu_ngay";
             this.m_lbl_tu_ngay.Size = new System.Drawing.Size(16, 13);
             this.m_lbl_tu_ngay.TabIndex = 45;
@@ -262,7 +262,7 @@ namespace BKI_KHO
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(194, 49);
+            this.label1.Location = new System.Drawing.Point(7, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 44;
@@ -271,7 +271,7 @@ namespace BKI_KHO
             // m_lbl_den_ngay
             // 
             this.m_lbl_den_ngay.AutoSize = true;
-            this.m_lbl_den_ngay.Location = new System.Drawing.Point(480, 49);
+            this.m_lbl_den_ngay.Location = new System.Drawing.Point(293, 53);
             this.m_lbl_den_ngay.Name = "m_lbl_den_ngay";
             this.m_lbl_den_ngay.Size = new System.Drawing.Size(16, 13);
             this.m_lbl_den_ngay.TabIndex = 49;
@@ -280,7 +280,7 @@ namespace BKI_KHO
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(415, 49);
+            this.label3.Location = new System.Drawing.Point(228, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 48;
@@ -296,7 +296,7 @@ namespace BKI_KHO
             this.m_lbl_title.Size = new System.Drawing.Size(817, 40);
             this.m_lbl_title.TabIndex = 50;
             this.m_lbl_title.Text = "CHI TIẾT LỢI NHUẬN HÀNG HÓA";
-            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // f810_RPT_HANG_HOA_LOI_NHUAN
             // 

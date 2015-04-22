@@ -253,7 +253,7 @@ namespace BKI_KHO
             this.m_cmd_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_search.ImageIndex = 5;
             this.m_cmd_search.ImageList = this.ImageList;
-            this.m_cmd_search.Location = new System.Drawing.Point(645, 46);
+            this.m_cmd_search.Location = new System.Drawing.Point(493, 46);
             this.m_cmd_search.Name = "m_cmd_search";
             this.m_cmd_search.Size = new System.Drawing.Size(82, 28);
             this.m_cmd_search.TabIndex = 26;
@@ -262,7 +262,7 @@ namespace BKI_KHO
             // 
             // m_txt_search
             // 
-            this.m_txt_search.Location = new System.Drawing.Point(441, 51);
+            this.m_txt_search.Location = new System.Drawing.Point(289, 51);
             this.m_txt_search.Name = "m_txt_search";
             this.m_txt_search.Size = new System.Drawing.Size(198, 20);
             this.m_txt_search.TabIndex = 4;
@@ -271,7 +271,7 @@ namespace BKI_KHO
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(355, 54);
+            this.label3.Location = new System.Drawing.Point(216, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 3;
@@ -306,7 +306,7 @@ namespace BKI_KHO
             this.label1.Size = new System.Drawing.Size(772, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "DANH SÁCH CHỨNG TỪ THEO NHÂN VIÊN";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // F703_V_DANH_SACH_CHUNG_TU_THEO_NHAN_VIEN
             // 

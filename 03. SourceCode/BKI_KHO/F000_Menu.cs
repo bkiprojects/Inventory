@@ -71,10 +71,24 @@ namespace BKI_KHO {
             m_cmd_loai_chung_tu.ItemClick += m_cmd_loai_chung_tu_ItemClick;
             m_cmd_hang_hoa.ItemClick += m_cmd_hang_hoa_ItemClick;
             m_cmd_nhan_vien.ItemClick += m_cmd_nhan_vien_ItemClick;
+            m_cmd_nhom_hang.ItemClick += m_cmd_nhom_hang_ItemClick;
             //Bao cao
             m_cmd_bc_xuat_nhap_ton.ItemClick += m_cmd_bc_xuat_nhap_ton_ItemClick;
             m_cmd_bc_loi_nhuan_gop.ItemClick += m_cmd_bc_loi_nhuan_gop_ItemClick;
             m_cmd_bc_doanh_thu_theo_nv.ItemClick += m_cmd_bc_doanh_thu_theo_nv_ItemClick;
+        }
+
+        void m_cmd_nhom_hang_ItemClick(object sender, ItemClickEventArgs e) {
+            try {
+                f302_V_DM_NHOM_HANG v_frm = new f302_V_DM_NHOM_HANG();
+                if(IsExistFormName(v_frm)) return;
+
+                v_frm.MdiParent = this;
+                v_frm.Show();
+            }
+            catch(Exception v_e) {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
 
         void m_cmd_nhan_vien_ItemClick(object sender, ItemClickEventArgs e) {
@@ -131,7 +145,7 @@ namespace BKI_KHO {
 
         void m_cmd_hang_hoa_ItemClick(object sender, ItemClickEventArgs e) {
             try {
-                f302_V_DM_NHOM_HANG v_frm = new f302_V_DM_NHOM_HANG();
+                f305_V_DM_HANG_HOA v_frm = new f305_V_DM_HANG_HOA();
                 if(IsExistFormName(v_frm)) return;
 
                 v_frm.MdiParent = this;

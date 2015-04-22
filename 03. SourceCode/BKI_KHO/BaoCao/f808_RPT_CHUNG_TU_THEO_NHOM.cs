@@ -257,7 +257,7 @@ namespace BKI_KHO
             this.label1.Size = new System.Drawing.Size(686, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "DANH SÁCH CHỨNG TỪ THEO NHÓM HÀNG";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 

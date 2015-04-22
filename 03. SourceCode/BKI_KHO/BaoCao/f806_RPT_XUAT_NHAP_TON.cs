@@ -247,7 +247,7 @@ namespace BKI_KHO
             this.m_txt_search.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.m_txt_search.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.m_txt_search.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.m_txt_search.Location = new System.Drawing.Point(151, 89);
+            this.m_txt_search.Location = new System.Drawing.Point(87, 86);
             this.m_txt_search.Name = "m_txt_search";
             this.m_txt_search.Size = new System.Drawing.Size(384, 20);
             this.m_txt_search.TabIndex = 2;
@@ -262,13 +262,13 @@ namespace BKI_KHO
             this.m_lbl_title.Size = new System.Drawing.Size(686, 40);
             this.m_lbl_title.TabIndex = 36;
             this.m_lbl_title.Text = "BÁO CÁO XUẤT NHẬP TỒN";
-            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(66, 92);
+            this.label3.Location = new System.Drawing.Point(12, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 33;
@@ -283,7 +283,7 @@ namespace BKI_KHO
             this.m_cmd_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_search.ImageIndex = 5;
             this.m_cmd_search.ImageList = this.ImageList;
-            this.m_cmd_search.Location = new System.Drawing.Point(553, 84);
+            this.m_cmd_search.Location = new System.Drawing.Point(490, 81);
             this.m_cmd_search.Name = "m_cmd_search";
             this.m_cmd_search.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_search.TabIndex = 3;
@@ -295,7 +295,7 @@ namespace BKI_KHO
             this.m_dat_den_ngay.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.m_dat_den_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_den_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_den_ngay.Location = new System.Drawing.Point(428, 48);
+            this.m_dat_den_ngay.Location = new System.Drawing.Point(280, 49);
             this.m_dat_den_ngay.Name = "m_dat_den_ngay";
             this.m_dat_den_ngay.Size = new System.Drawing.Size(114, 20);
             this.m_dat_den_ngay.TabIndex = 1;
@@ -306,7 +306,7 @@ namespace BKI_KHO
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(369, 48);
+            this.label2.Location = new System.Drawing.Point(208, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 31;
@@ -317,7 +317,7 @@ namespace BKI_KHO
             this.m_dat_tu_ngay.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.m_dat_tu_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_tu_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_tu_ngay.Location = new System.Drawing.Point(174, 48);
+            this.m_dat_tu_ngay.Location = new System.Drawing.Point(69, 49);
             this.m_dat_tu_ngay.Name = "m_dat_tu_ngay";
             this.m_dat_tu_ngay.Size = new System.Drawing.Size(114, 20);
             this.m_dat_tu_ngay.TabIndex = 0;
@@ -328,7 +328,7 @@ namespace BKI_KHO
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(122, 48);
+            this.label1.Location = new System.Drawing.Point(12, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 29;

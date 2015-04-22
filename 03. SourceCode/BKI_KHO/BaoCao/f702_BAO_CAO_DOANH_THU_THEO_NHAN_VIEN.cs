@@ -260,7 +260,7 @@ namespace BKI_KHO
             // 
             this.m_txt_search.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.m_txt_search.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.m_txt_search.Location = new System.Drawing.Point(183, 88);
+            this.m_txt_search.Location = new System.Drawing.Point(137, 88);
             this.m_txt_search.Name = "m_txt_search";
             this.m_txt_search.Size = new System.Drawing.Size(370, 20);
             this.m_txt_search.TabIndex = 5;
@@ -283,12 +283,12 @@ namespace BKI_KHO
             this.m_lbl_title.Size = new System.Drawing.Size(731, 31);
             this.m_lbl_title.TabIndex = 28;
             this.m_lbl_title.Text = "BÁO CÁO DOANH THU THEO NHÂN VIÊN";
-            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 91);
+            this.label3.Location = new System.Drawing.Point(12, 95);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 13);
             this.label3.TabIndex = 4;
@@ -302,7 +302,7 @@ namespace BKI_KHO
             this.m_cmd_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_search.ImageIndex = 16;
             this.m_cmd_search.ImageList = this.ImageList;
-            this.m_cmd_search.Location = new System.Drawing.Point(559, 83);
+            this.m_cmd_search.Location = new System.Drawing.Point(513, 83);
             this.m_cmd_search.Name = "m_cmd_search";
             this.m_cmd_search.Size = new System.Drawing.Size(122, 28);
             this.m_cmd_search.TabIndex = 25;
@@ -312,7 +312,7 @@ namespace BKI_KHO
             // 
             this.m_dat_den_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_den_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_den_ngay.Location = new System.Drawing.Point(431, 34);
+            this.m_dat_den_ngay.Location = new System.Drawing.Point(295, 44);
             this.m_dat_den_ngay.Name = "m_dat_den_ngay";
             this.m_dat_den_ngay.Size = new System.Drawing.Size(150, 20);
             this.m_dat_den_ngay.TabIndex = 3;
@@ -320,7 +320,7 @@ namespace BKI_KHO
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(372, 40);
+            this.label2.Location = new System.Drawing.Point(230, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
@@ -330,7 +330,7 @@ namespace BKI_KHO
             // 
             this.m_dat_tu_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_tu_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_tu_ngay.Location = new System.Drawing.Point(206, 34);
+            this.m_dat_tu_ngay.Location = new System.Drawing.Point(64, 44);
             this.m_dat_tu_ngay.Name = "m_dat_tu_ngay";
             this.m_dat_tu_ngay.Size = new System.Drawing.Size(150, 20);
             this.m_dat_tu_ngay.TabIndex = 1;
@@ -338,7 +338,7 @@ namespace BKI_KHO
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(154, 40);
+            this.label1.Location = new System.Drawing.Point(12, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;

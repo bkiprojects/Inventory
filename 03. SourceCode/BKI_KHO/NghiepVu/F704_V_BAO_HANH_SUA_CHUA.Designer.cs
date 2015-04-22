@@ -38,8 +38,10 @@
             this.m_dat_ngay = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.m_lbl_tong_tien = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.m_cmd_del = new SIS.Controls.Button.SiSButton();
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
@@ -61,8 +63,6 @@
             this.m_cmd_in_hoa_don = new SIS.Controls.Button.SiSButton();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.m_lbl_tong_tien = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
@@ -91,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(540, 9);
+            this.label2.Location = new System.Drawing.Point(450, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 2;
@@ -118,7 +118,7 @@
             // 
             this.m_dat_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_ngay.Location = new System.Drawing.Point(578, 6);
+            this.m_dat_ngay.Location = new System.Drawing.Point(488, 6);
             this.m_dat_ngay.Name = "m_dat_ngay";
             this.m_dat_ngay.Size = new System.Drawing.Size(122, 20);
             this.m_dat_ngay.TabIndex = 1;
@@ -127,7 +127,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(217, 6);
+            this.label5.Location = new System.Drawing.Point(158, 6);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(288, 38);
             this.label5.TabIndex = 9;
@@ -146,17 +146,6 @@
             this.panel1.Size = new System.Drawing.Size(740, 378);
             this.panel1.TabIndex = 0;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(550, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 17);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "VNĐ";
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label7);
@@ -172,6 +161,37 @@
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin doanh thu bảo hành theo nhân viên";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Maroon;
+            this.label7.Location = new System.Drawing.Point(550, 188);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(37, 17);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "VNĐ";
+            // 
+            // m_lbl_tong_tien
+            // 
+            this.m_lbl_tong_tien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_tong_tien.ForeColor = System.Drawing.Color.Maroon;
+            this.m_lbl_tong_tien.Location = new System.Drawing.Point(385, 185);
+            this.m_lbl_tong_tien.Name = "m_lbl_tong_tien";
+            this.m_lbl_tong_tien.Size = new System.Drawing.Size(159, 23);
+            this.m_lbl_tong_tien.TabIndex = 27;
+            this.m_lbl_tong_tien.Text = "label13";
+            this.m_lbl_tong_tien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(305, 190);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "Tổng : ";
             // 
             // label10
             // 
@@ -231,7 +251,7 @@
             this.m_fg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.m_fg.Location = new System.Drawing.Point(6, 46);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Rows.Count = 24;
+            this.m_fg.Rows.Count = 25;
             this.m_fg.Size = new System.Drawing.Size(734, 136);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 23;
@@ -431,26 +451,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(740, 52);
             this.panel2.TabIndex = 21;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(305, 190);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "Tổng : ";
-            // 
-            // m_lbl_tong_tien
-            // 
-            this.m_lbl_tong_tien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_tong_tien.ForeColor = System.Drawing.Color.Maroon;
-            this.m_lbl_tong_tien.Location = new System.Drawing.Point(385, 185);
-            this.m_lbl_tong_tien.Name = "m_lbl_tong_tien";
-            this.m_lbl_tong_tien.Size = new System.Drawing.Size(159, 23);
-            this.m_lbl_tong_tien.TabIndex = 27;
-            this.m_lbl_tong_tien.Text = "label13";
-            this.m_lbl_tong_tien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // F704_V_BAO_HANH_SUA_CHUA
             // 

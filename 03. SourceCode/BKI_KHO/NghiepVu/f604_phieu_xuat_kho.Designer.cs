@@ -89,7 +89,7 @@
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_fg.Location = new System.Drawing.Point(3, 16);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Rows.Count = 47;
+            this.m_fg.Rows.Count = 48;
             this.m_fg.Size = new System.Drawing.Size(829, 245);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 0;
@@ -111,7 +111,7 @@
             // 
             this.m_txt_nguoi_thu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.m_txt_nguoi_thu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.m_txt_nguoi_thu.Location = new System.Drawing.Point(192, 137);
+            this.m_txt_nguoi_thu.Location = new System.Drawing.Point(107, 137);
             this.m_txt_nguoi_thu.MaxLength = 10;
             this.m_txt_nguoi_thu.Name = "m_txt_nguoi_thu";
             this.m_txt_nguoi_thu.Size = new System.Drawing.Size(167, 20);
@@ -120,7 +120,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(96, 140);
+            this.label9.Location = new System.Drawing.Point(11, 140);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(76, 13);
             this.label9.TabIndex = 10;
@@ -131,7 +131,7 @@
             this.m_lbl_ten_phieu.AutoSize = true;
             this.m_lbl_ten_phieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.m_lbl_ten_phieu.ForeColor = System.Drawing.Color.Maroon;
-            this.m_lbl_ten_phieu.Location = new System.Drawing.Point(290, 0);
+            this.m_lbl_ten_phieu.Location = new System.Drawing.Point(6, 12);
             this.m_lbl_ten_phieu.Name = "m_lbl_ten_phieu";
             this.m_lbl_ten_phieu.Size = new System.Drawing.Size(209, 24);
             this.m_lbl_ten_phieu.TabIndex = 0;
@@ -140,7 +140,7 @@
             // m_dat_ngay_lap
             // 
             this.m_dat_ngay_lap.EditMask = "##/##/####";
-            this.m_dat_ngay_lap.Location = new System.Drawing.Point(474, 48);
+            this.m_dat_ngay_lap.Location = new System.Drawing.Point(389, 48);
             this.m_dat_ngay_lap.Name = "m_dat_ngay_lap";
             this.m_dat_ngay_lap.Size = new System.Drawing.Size(166, 19);
             this.m_dat_ngay_lap.TabIndex = 3;
@@ -151,7 +151,7 @@
             this.m_txt_ten_kho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.m_txt_ten_kho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.m_txt_ten_kho.Enabled = false;
-            this.m_txt_ten_kho.Location = new System.Drawing.Point(192, 172);
+            this.m_txt_ten_kho.Location = new System.Drawing.Point(107, 172);
             this.m_txt_ten_kho.MaxLength = 10;
             this.m_txt_ten_kho.Name = "m_txt_ten_kho";
             this.m_txt_ten_kho.Size = new System.Drawing.Size(167, 20);
@@ -160,7 +160,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(96, 176);
+            this.label2.Location = new System.Drawing.Point(11, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(26, 13);
             this.label2.TabIndex = 12;
@@ -218,7 +218,7 @@
             this.m_cmd_chon_kho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_chon_kho.ImageIndex = 14;
             this.m_cmd_chon_kho.ImageList = this.imageList1;
-            this.m_cmd_chon_kho.Location = new System.Drawing.Point(365, 132);
+            this.m_cmd_chon_kho.Location = new System.Drawing.Point(280, 132);
             this.m_cmd_chon_kho.Name = "m_cmd_chon_kho";
             this.m_cmd_chon_kho.Size = new System.Drawing.Size(32, 28);
             this.m_cmd_chon_kho.TabIndex = 14;
@@ -227,7 +227,7 @@
             // m_lab_ngay
             // 
             this.m_lab_ngay.AutoSize = true;
-            this.m_lab_ngay.Location = new System.Drawing.Point(423, 52);
+            this.m_lab_ngay.Location = new System.Drawing.Point(338, 52);
             this.m_lab_ngay.Name = "m_lab_ngay";
             this.m_lab_ngay.Size = new System.Drawing.Size(49, 13);
             this.m_lab_ngay.TabIndex = 2;
@@ -237,7 +237,7 @@
             // 
             this.m_txt_so_phieu_thu_chi.BackColor = System.Drawing.SystemColors.Window;
             this.m_txt_so_phieu_thu_chi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.m_txt_so_phieu_thu_chi.Location = new System.Drawing.Point(193, 48);
+            this.m_txt_so_phieu_thu_chi.Location = new System.Drawing.Point(108, 48);
             this.m_txt_so_phieu_thu_chi.MaxLength = 20;
             this.m_txt_so_phieu_thu_chi.Name = "m_txt_so_phieu_thu_chi";
             this.m_txt_so_phieu_thu_chi.Size = new System.Drawing.Size(167, 20);
@@ -289,7 +289,7 @@
             // m_lab_so_phieu
             // 
             this.m_lab_so_phieu.AutoSize = true;
-            this.m_lab_so_phieu.Location = new System.Drawing.Point(97, 52);
+            this.m_lab_so_phieu.Location = new System.Drawing.Point(12, 52);
             this.m_lab_so_phieu.Name = "m_lab_so_phieu";
             this.m_lab_so_phieu.Size = new System.Drawing.Size(65, 13);
             this.m_lab_so_phieu.TabIndex = 0;
@@ -298,7 +298,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(96, 104);
+            this.label4.Location = new System.Drawing.Point(11, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 8;
@@ -307,7 +307,7 @@
             // m_txt_noi_dung
             // 
             this.m_txt_noi_dung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.m_txt_noi_dung.Location = new System.Drawing.Point(192, 87);
+            this.m_txt_noi_dung.Location = new System.Drawing.Point(107, 87);
             this.m_txt_noi_dung.Multiline = true;
             this.m_txt_noi_dung.Name = "m_txt_noi_dung";
             this.m_txt_noi_dung.Size = new System.Drawing.Size(471, 35);

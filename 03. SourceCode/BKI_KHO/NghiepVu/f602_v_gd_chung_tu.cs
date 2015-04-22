@@ -194,7 +194,7 @@ namespace BKI_KHO
             this.m_lbl_title.Size = new System.Drawing.Size(962, 31);
             this.m_lbl_title.TabIndex = 31;
             this.m_lbl_title.Text = "DANH SÁCH PHIẾU XUẤT NHẬP KHO";
-            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // m_cmd_search
             // 
@@ -204,7 +204,7 @@ namespace BKI_KHO
             this.m_cmd_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_search.ImageIndex = 5;
             this.m_cmd_search.ImageList = this.ImageList;
-            this.m_cmd_search.Location = new System.Drawing.Point(622, 45);
+            this.m_cmd_search.Location = new System.Drawing.Point(463, 41);
             this.m_cmd_search.Name = "m_cmd_search";
             this.m_cmd_search.Size = new System.Drawing.Size(82, 28);
             this.m_cmd_search.TabIndex = 30;
@@ -212,7 +212,7 @@ namespace BKI_KHO
             // 
             // m_txt_tim_kiem
             // 
-            this.m_txt_tim_kiem.Location = new System.Drawing.Point(243, 50);
+            this.m_txt_tim_kiem.Location = new System.Drawing.Point(84, 46);
             this.m_txt_tim_kiem.Name = "m_txt_tim_kiem";
             this.m_txt_tim_kiem.Size = new System.Drawing.Size(350, 20);
             this.m_txt_tim_kiem.TabIndex = 29;
@@ -220,7 +220,7 @@ namespace BKI_KHO
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 54);
+            this.label2.Location = new System.Drawing.Point(10, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 28;
