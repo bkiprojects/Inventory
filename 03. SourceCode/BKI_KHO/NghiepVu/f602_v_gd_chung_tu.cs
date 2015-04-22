@@ -34,13 +34,13 @@ namespace BKI_KHO
 		internal System.Windows.Forms.ImageList ImageList;
 		internal System.Windows.Forms.Panel m_pnl_out_place_dm;
         private C1.Win.C1FlexGrid.C1FlexGrid m_fg;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
         private Panel panel1;
         internal SIS.Controls.Button.SiSButton m_cmd_search;
         private TextBox m_txt_tim_kiem;
         private Label label2;
         private Label m_lbl_title;
         internal SIS.Controls.Button.SiSButton m_cmd_xoa_chung_tu;
+        internal SIS.Controls.Button.SiSButton m_cmd_exit;
 		private System.ComponentModel.IContainer components;
 
 		public f602_v_gd_chung_tu()
@@ -83,13 +83,13 @@ namespace BKI_KHO
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
             this.m_cmd_xoa_chung_tu = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_lbl_title = new System.Windows.Forms.Label();
             this.m_cmd_search = new SIS.Controls.Button.SiSButton();
             this.m_txt_tim_kiem = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.panel1.SuspendLayout();
@@ -124,8 +124,8 @@ namespace BKI_KHO
             // 
             // m_pnl_out_place_dm
             // 
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_xoa_chung_tu);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_xoa_chung_tu);
             this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 563);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
@@ -147,21 +147,6 @@ namespace BKI_KHO
             this.m_cmd_xoa_chung_tu.Size = new System.Drawing.Size(120, 28);
             this.m_cmd_xoa_chung_tu.TabIndex = 12;
             this.m_cmd_xoa_chung_tu.Text = "Xóa chứng từ";
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(870, 4);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_exit.TabIndex = 11;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
             // 
             // m_fg
             // 
@@ -225,6 +210,21 @@ namespace BKI_KHO
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 28;
             this.label2.Text = "Tìm kiếm";
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_exit.ImageIndex = 12;
+            this.m_cmd_exit.ImageList = this.ImageList;
+            this.m_cmd_exit.Location = new System.Drawing.Point(124, 4);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
+            this.m_cmd_exit.TabIndex = 13;
+            this.m_cmd_exit.Text = "Thoát (Esc)";
             // 
             // f602_v_gd_chung_tu
             // 

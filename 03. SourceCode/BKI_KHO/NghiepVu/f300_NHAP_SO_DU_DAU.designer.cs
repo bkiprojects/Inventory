@@ -43,11 +43,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.m_txt_so_ban_ghi = new System.Windows.Forms.TextBox();
             this.m_cmd_nhap_lo = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_save = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.button1 = new System.Windows.Forms.Button();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.m_obj_dialog = new System.Windows.Forms.OpenFileDialog();
+            this.m_cmd_save = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_grb_header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
@@ -188,11 +188,11 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.m_cmd_exit);
+            this.panel1.Controls.Add(this.m_cmd_save);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.m_txt_so_ban_ghi);
             this.panel1.Controls.Add(this.m_cmd_nhap_lo);
-            this.panel1.Controls.Add(this.m_cmd_save);
-            this.panel1.Controls.Add(this.m_cmd_exit);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 500);
@@ -203,7 +203,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(112, 8);
+            this.label1.Location = new System.Drawing.Point(362, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 3;
@@ -211,7 +211,7 @@
             // 
             // m_txt_so_ban_ghi
             // 
-            this.m_txt_so_ban_ghi.Location = new System.Drawing.Point(183, 5);
+            this.m_txt_so_ban_ghi.Location = new System.Drawing.Point(433, 6);
             this.m_txt_so_ban_ghi.Name = "m_txt_so_ban_ghi";
             this.m_txt_so_ban_ghi.Size = new System.Drawing.Size(51, 20);
             this.m_txt_so_ban_ghi.TabIndex = 1;
@@ -231,37 +231,6 @@
             this.m_cmd_nhap_lo.Size = new System.Drawing.Size(106, 31);
             this.m_cmd_nhap_lo.TabIndex = 2;
             this.m_cmd_nhap_lo.Text = "&Nhập từ Excel";
-            // 
-            // m_cmd_save
-            // 
-            this.m_cmd_save.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_save.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_save.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_save.ImageIndex = 10;
-            this.m_cmd_save.ImageList = this.ImageList;
-            this.m_cmd_save.Location = new System.Drawing.Point(735, 0);
-            this.m_cmd_save.Name = "m_cmd_save";
-            this.m_cmd_save.Size = new System.Drawing.Size(112, 31);
-            this.m_cmd_save.TabIndex = 0;
-            this.m_cmd_save.Text = "&Lưu";
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(847, 0);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(103, 31);
-            this.m_cmd_exit.TabIndex = 4;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
             // 
             // button1
             // 
@@ -289,6 +258,37 @@
             // m_obj_dialog
             // 
             this.m_obj_dialog.FileName = "openFileDialog1";
+            // 
+            // m_cmd_save
+            // 
+            this.m_cmd_save.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_save.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_save.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_save.ImageIndex = 10;
+            this.m_cmd_save.ImageList = this.ImageList;
+            this.m_cmd_save.Location = new System.Drawing.Point(106, 0);
+            this.m_cmd_save.Name = "m_cmd_save";
+            this.m_cmd_save.Size = new System.Drawing.Size(112, 31);
+            this.m_cmd_save.TabIndex = 5;
+            this.m_cmd_save.Text = "&Lưu";
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_exit.ImageIndex = 12;
+            this.m_cmd_exit.ImageList = this.ImageList;
+            this.m_cmd_exit.Location = new System.Drawing.Point(218, 0);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(103, 31);
+            this.m_cmd_exit.TabIndex = 6;
+            this.m_cmd_exit.Text = "Thoát (Esc)";
             // 
             // f300_NHAP_SO_DU_DAU
             // 
@@ -320,8 +320,6 @@
         private System.Windows.Forms.TextBox m_txt_ma_ct;
         internal System.Windows.Forms.ImageList ImageList;
         private System.Windows.Forms.Panel panel1;
-        internal SIS.Controls.Button.SiSButton m_cmd_save;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
         private System.Windows.Forms.Button button1;
         private C1.Win.C1FlexGrid.C1FlexGrid m_fg;
         internal System.Windows.Forms.ImageList imageList1;
@@ -330,5 +328,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox m_txt_so_ban_ghi;
         internal SIS.Controls.Button.SiSButton m_cmd_del;
+        internal SIS.Controls.Button.SiSButton m_cmd_exit;
+        internal SIS.Controls.Button.SiSButton m_cmd_save;
     }
 }

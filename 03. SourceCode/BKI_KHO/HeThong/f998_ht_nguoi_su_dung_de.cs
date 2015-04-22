@@ -23,8 +23,7 @@ namespace BKI_KHO
 	/// </summary>
 	public class f998_ht_nguoi_su_dung_de : System.Windows.Forms.Form
 	{
-		internal System.Windows.Forms.Panel m_pnl_out_place_dm;
-		internal SIS.Controls.Button.SiSButton m_cmd_exit;
+        internal System.Windows.Forms.Panel m_pnl_out_place_dm;
 		internal System.Windows.Forms.ImageList ImageList;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
@@ -45,6 +44,7 @@ namespace BKI_KHO
 		private System.Windows.Forms.Label label9;
         private Label label10;
         private ComboBox m_cbo_nhom_quyen;
+        internal SIS.Controls.Button.SiSButton m_cmd_exit;
 		private System.ComponentModel.IContainer components;
 
 		public f998_ht_nguoi_su_dung_de()
@@ -87,7 +87,6 @@ namespace BKI_KHO
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
             this.m_cmd_save = new SIS.Controls.Button.SiSButton();
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -106,6 +105,7 @@ namespace BKI_KHO
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_pnl_out_place_dm.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -162,21 +162,6 @@ namespace BKI_KHO
             this.ImageList.Images.SetKeyName(19, "");
             this.ImageList.Images.SetKeyName(20, "");
             this.ImageList.Images.SetKeyName(21, "");
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 11;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(372, 4);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_exit.TabIndex = 1;
-            this.m_cmd_exit.Text = "Trở về (Esc)";
             // 
             // label1
             // 
@@ -259,7 +244,7 @@ namespace BKI_KHO
             "Đã đóng"});
             this.m_cbo_trang_thai.Location = new System.Drawing.Point(119, 120);
             this.m_cbo_trang_thai.Name = "m_cbo_trang_thai";
-            this.m_cbo_trang_thai.Size = new System.Drawing.Size(96, 22);
+            this.m_cbo_trang_thai.Size = new System.Drawing.Size(96, 21);
             this.m_cbo_trang_thai.TabIndex = 12;
             // 
             // label5
@@ -326,7 +311,7 @@ namespace BKI_KHO
             "Đã đóng"});
             this.m_cbo_nhom_quyen.Location = new System.Drawing.Point(119, 147);
             this.m_cbo_nhom_quyen.Name = "m_cbo_nhom_quyen";
-            this.m_cbo_nhom_quyen.Size = new System.Drawing.Size(224, 22);
+            this.m_cbo_nhom_quyen.Size = new System.Drawing.Size(224, 21);
             this.m_cbo_nhom_quyen.TabIndex = 12;
             // 
             // label9
@@ -365,6 +350,21 @@ namespace BKI_KHO
             this.label10.TabIndex = 11;
             this.label10.Text = "Nhóm quyền";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_exit.ImageIndex = 11;
+            this.m_cmd_exit.ImageList = this.ImageList;
+            this.m_cmd_exit.Location = new System.Drawing.Point(372, 4);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
+            this.m_cmd_exit.TabIndex = 1;
+            this.m_cmd_exit.Text = "Trở về (Esc)";
             // 
             // f998_ht_nguoi_su_dung_de
             // 

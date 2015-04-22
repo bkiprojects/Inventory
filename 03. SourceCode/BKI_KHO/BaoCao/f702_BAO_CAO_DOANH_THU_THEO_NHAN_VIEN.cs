@@ -34,10 +34,6 @@ namespace BKI_KHO
         internal System.Windows.Forms.ImageList ImageList;
         internal System.Windows.Forms.Panel m_pnl_out_place_dm;
         private C1.Win.C1FlexGrid.C1FlexGrid m_fg;
-        internal SIS.Controls.Button.SiSButton m_cmd_delete;
-        internal SIS.Controls.Button.SiSButton m_cmd_update;
-        internal SIS.Controls.Button.SiSButton m_cmd_insert;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
         private Panel panel1;
         private TextBox m_txt_search;
         private Label label3;
@@ -49,6 +45,11 @@ namespace BKI_KHO
         private Label m_lbl_count_record;
         private Label m_lbl_title;
         private Label label2;
+        private Panel panel2;
+        internal SIS.Controls.Button.SiSButton m_cmd_exit;
+        internal SIS.Controls.Button.SiSButton m_cmd_delete;
+        internal SIS.Controls.Button.SiSButton m_cmd_update;
+        internal SIS.Controls.Button.SiSButton m_cmd_insert;
         private System.ComponentModel.IContainer components;
 
         public f702_BAO_CAO_DOANH_THU_THEO_NHAN_VIEN()
@@ -90,11 +91,7 @@ namespace BKI_KHO
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f702_BAO_CAO_DOANH_THU_THEO_NHAN_VIEN));
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
-            this.m_cmd_insert = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_update = new SIS.Controls.Button.SiSButton();
             this.m_cmd_export_excel = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_delete = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
             this.m_txt_search = new System.Windows.Forms.TextBox();
@@ -106,9 +103,15 @@ namespace BKI_KHO
             this.label2 = new System.Windows.Forms.Label();
             this.m_dat_tu_ngay = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.m_cmd_insert = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_update = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_delete = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // ImageList
@@ -140,47 +143,17 @@ namespace BKI_KHO
             // 
             // m_pnl_out_place_dm
             // 
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_insert);
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_update);
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_export_excel);
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_delete);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_delete);
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_update);
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_insert);
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_export_excel);
             this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 473);
+            this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 378);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(731, 36);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(746, 36);
             this.m_pnl_out_place_dm.TabIndex = 19;
-            // 
-            // m_cmd_insert
-            // 
-            this.m_cmd_insert.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_insert.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_insert.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_insert.ImageIndex = 2;
-            this.m_cmd_insert.ImageList = this.ImageList;
-            this.m_cmd_insert.Location = new System.Drawing.Point(295, 4);
-            this.m_cmd_insert.Name = "m_cmd_insert";
-            this.m_cmd_insert.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_insert.TabIndex = 12;
-            this.m_cmd_insert.Text = "&Thêm";
-            // 
-            // m_cmd_update
-            // 
-            this.m_cmd_update.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_update.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_update.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_update.ImageIndex = 3;
-            this.m_cmd_update.ImageList = this.ImageList;
-            this.m_cmd_update.Location = new System.Drawing.Point(383, 4);
-            this.m_cmd_update.Name = "m_cmd_update";
-            this.m_cmd_update.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_update.TabIndex = 13;
-            this.m_cmd_update.Text = "&Sửa";
             // 
             // m_cmd_export_excel
             // 
@@ -198,69 +171,33 @@ namespace BKI_KHO
             this.m_cmd_export_excel.Text = "Xuất Excel";
             this.m_cmd_export_excel.Visible = false;
             // 
-            // m_cmd_delete
-            // 
-            this.m_cmd_delete.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_delete.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_delete.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_delete.ImageIndex = 4;
-            this.m_cmd_delete.ImageList = this.ImageList;
-            this.m_cmd_delete.Location = new System.Drawing.Point(471, 4);
-            this.m_cmd_delete.Name = "m_cmd_delete";
-            this.m_cmd_delete.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_delete.TabIndex = 14;
-            this.m_cmd_delete.Text = "&Xoá";
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(559, 4);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(168, 28);
-            this.m_cmd_exit.TabIndex = 11;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
-            // 
             // m_fg
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 149);
+            this.m_fg.Location = new System.Drawing.Point(0, 123);
             this.m_fg.Name = "m_fg";
             this.m_fg.Rows.Fixed = 2;
-            this.m_fg.Size = new System.Drawing.Size(731, 324);
+            this.m_fg.Size = new System.Drawing.Size(746, 255);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_txt_search);
+            this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.m_lbl_count_record);
             this.panel1.Controls.Add(this.m_lbl_title);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.m_cmd_search);
-            this.panel1.Controls.Add(this.m_dat_den_ngay);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.m_dat_tu_ngay);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(731, 149);
+            this.panel1.Size = new System.Drawing.Size(746, 123);
             this.panel1.TabIndex = 21;
             // 
             // m_txt_search
             // 
             this.m_txt_search.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.m_txt_search.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.m_txt_search.Location = new System.Drawing.Point(137, 88);
+            this.m_txt_search.Location = new System.Drawing.Point(135, 49);
             this.m_txt_search.Name = "m_txt_search";
             this.m_txt_search.Size = new System.Drawing.Size(370, 20);
             this.m_txt_search.TabIndex = 5;
@@ -280,7 +217,7 @@ namespace BKI_KHO
             this.m_lbl_title.ForeColor = System.Drawing.Color.Maroon;
             this.m_lbl_title.Location = new System.Drawing.Point(0, 0);
             this.m_lbl_title.Name = "m_lbl_title";
-            this.m_lbl_title.Size = new System.Drawing.Size(731, 31);
+            this.m_lbl_title.Size = new System.Drawing.Size(746, 31);
             this.m_lbl_title.TabIndex = 28;
             this.m_lbl_title.Text = "BÁO CÁO DOANH THU THEO NHÂN VIÊN";
             this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -288,7 +225,7 @@ namespace BKI_KHO
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 95);
+            this.label3.Location = new System.Drawing.Point(10, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(119, 13);
             this.label3.TabIndex = 4;
@@ -302,7 +239,7 @@ namespace BKI_KHO
             this.m_cmd_search.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_search.ImageIndex = 16;
             this.m_cmd_search.ImageList = this.ImageList;
-            this.m_cmd_search.Location = new System.Drawing.Point(513, 83);
+            this.m_cmd_search.Location = new System.Drawing.Point(511, 44);
             this.m_cmd_search.Name = "m_cmd_search";
             this.m_cmd_search.Size = new System.Drawing.Size(122, 28);
             this.m_cmd_search.TabIndex = 25;
@@ -312,7 +249,7 @@ namespace BKI_KHO
             // 
             this.m_dat_den_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_den_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_den_ngay.Location = new System.Drawing.Point(295, 44);
+            this.m_dat_den_ngay.Location = new System.Drawing.Point(293, 5);
             this.m_dat_den_ngay.Name = "m_dat_den_ngay";
             this.m_dat_den_ngay.Size = new System.Drawing.Size(150, 20);
             this.m_dat_den_ngay.TabIndex = 3;
@@ -320,7 +257,7 @@ namespace BKI_KHO
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(230, 50);
+            this.label2.Location = new System.Drawing.Point(228, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 2;
@@ -330,7 +267,7 @@ namespace BKI_KHO
             // 
             this.m_dat_tu_ngay.CustomFormat = "dd/MM/yyyy";
             this.m_dat_tu_ngay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_tu_ngay.Location = new System.Drawing.Point(64, 44);
+            this.m_dat_tu_ngay.Location = new System.Drawing.Point(62, 5);
             this.m_dat_tu_ngay.Name = "m_dat_tu_ngay";
             this.m_dat_tu_ngay.Size = new System.Drawing.Size(150, 20);
             this.m_dat_tu_ngay.TabIndex = 1;
@@ -338,16 +275,91 @@ namespace BKI_KHO
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 50);
+            this.label1.Location = new System.Drawing.Point(10, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Từ ngày";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.m_txt_search);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.m_dat_tu_ngay);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.m_dat_den_ngay);
+            this.panel2.Controls.Add(this.m_cmd_search);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 31);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(746, 77);
+            this.panel2.TabIndex = 29;
+            // 
+            // m_cmd_insert
+            // 
+            this.m_cmd_insert.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_insert.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_insert.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_insert.ImageIndex = 2;
+            this.m_cmd_insert.ImageList = this.ImageList;
+            this.m_cmd_insert.Location = new System.Drawing.Point(163, 4);
+            this.m_cmd_insert.Name = "m_cmd_insert";
+            this.m_cmd_insert.Size = new System.Drawing.Size(88, 28);
+            this.m_cmd_insert.TabIndex = 12;
+            this.m_cmd_insert.Text = "&Thêm";
+            // 
+            // m_cmd_update
+            // 
+            this.m_cmd_update.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_update.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_update.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_update.ImageIndex = 3;
+            this.m_cmd_update.ImageList = this.ImageList;
+            this.m_cmd_update.Location = new System.Drawing.Point(251, 4);
+            this.m_cmd_update.Name = "m_cmd_update";
+            this.m_cmd_update.Size = new System.Drawing.Size(88, 28);
+            this.m_cmd_update.TabIndex = 24;
+            this.m_cmd_update.Text = "&Sửa";
+            // 
+            // m_cmd_delete
+            // 
+            this.m_cmd_delete.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_delete.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_delete.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_delete.ImageIndex = 4;
+            this.m_cmd_delete.ImageList = this.ImageList;
+            this.m_cmd_delete.Location = new System.Drawing.Point(339, 4);
+            this.m_cmd_delete.Name = "m_cmd_delete";
+            this.m_cmd_delete.Size = new System.Drawing.Size(88, 28);
+            this.m_cmd_delete.TabIndex = 26;
+            this.m_cmd_delete.Text = "&Xoá";
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_exit.ImageIndex = 12;
+            this.m_cmd_exit.ImageList = this.ImageList;
+            this.m_cmd_exit.Location = new System.Drawing.Point(427, 4);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(168, 28);
+            this.m_cmd_exit.TabIndex = 27;
+            this.m_cmd_exit.Text = "Thoát (Esc)";
+            // 
             // f702_BAO_CAO_DOANH_THU_THEO_NHAN_VIEN
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(731, 509);
+            this.ClientSize = new System.Drawing.Size(746, 414);
             this.Controls.Add(this.m_fg);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.m_pnl_out_place_dm);
@@ -359,6 +371,8 @@ namespace BKI_KHO
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

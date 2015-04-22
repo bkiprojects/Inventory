@@ -54,6 +54,8 @@ namespace BKI_KHO.HeThong
         private void format_control()
         {
             CControlFormat.setFormStyle(this, new CAppContext_201());
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ControlBox = false;
         }
 
         private void load_data_2_rtxt_quyen_chua_cap(decimal ip_dc_id)
