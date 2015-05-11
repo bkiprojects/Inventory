@@ -124,15 +124,10 @@
   <data name="Custom-Icon-Design-Pretty-Office-7-Product-documentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Custom-Icon-Design-Pretty-Office-7-Product-documentation.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1431352350_self1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1431352350_self1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="1431352853_Model" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1431352853_Model.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1431352350_self11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1431352350_self11.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="1431352857_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1431352857_product.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
