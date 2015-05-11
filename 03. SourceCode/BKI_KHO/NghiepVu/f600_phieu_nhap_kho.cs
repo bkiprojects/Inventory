@@ -264,7 +264,7 @@ namespace BKI_KHO {
         }
         private bool check_tong_tien_is_ok() {
             Debug.Assert(m_txt_tong_tien.Value != null, "function check_tong_tien_is_ok: m_txt_tong_tien.Value phải not null");
-            Debug.Assert(!CIPConvert.is_valid_number( m_txt_tong_tien.Value), "function check_tong_tien_is_ok: m_txt_tong_tien.Value phải là số");
+            //Debug.Assert(!CIPConvert.is_valid_number( m_txt_tong_tien.Value), "function check_tong_tien_is_ok: m_txt_tong_tien.Value phải là số");
             decimal v_dc_tong_tien = CIPConvert.ToDecimal(m_txt_tong_tien.Value);
             if (v_dc_tong_tien != get_tong_tien()) {
                 BaseMessages.MsgBox_Infor("Tổng số tiền chứng từ không bằng tổng số tiền chi tiết");
@@ -365,8 +365,8 @@ namespace BKI_KHO {
             m_fg.Redraw = true;
         }
         private void form_2_us_gd_chung_tu(US_V_GD_CHUNG_TU op_us_gd_chung_tu) {
-            Debug.Assert(m_txt_tong_tien.Value != null, "function check_tong_tien_is_ok: m_txt_tong_tien.Value phải not null");
-            Debug.Assert(!CIPConvert.is_valid_number(m_txt_tong_tien.Text), "function check_tong_tien_is_ok: m_txt_tong_tien.Value phải là số");
+            //Debug.Assert(m_txt_tong_tien.Value != null, "function check_tong_tien_is_ok: m_txt_tong_tien.Value phải not null");
+            //Debug.Assert(!CIPConvert.is_valid_number(m_txt_tong_tien.Text), "function check_tong_tien_is_ok: m_txt_tong_tien.Value phải là số");
 
             op_us_gd_chung_tu.strDIEN_GIAI = m_txt_noi_dung.Text;
             op_us_gd_chung_tu.dcID_LOAI_CT = 1;//phiếu nhập kho
