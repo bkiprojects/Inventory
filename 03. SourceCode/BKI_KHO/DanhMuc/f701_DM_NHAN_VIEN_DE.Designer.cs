@@ -290,7 +290,7 @@
             this.ForeColor = System.Drawing.Color.Maroon;
             this.Name = "f701_DM_NHAN_VIEN_DE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "f701 - Chi tiết nhân viên";
+            this.Text = "Chi tiết nhân viên";
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

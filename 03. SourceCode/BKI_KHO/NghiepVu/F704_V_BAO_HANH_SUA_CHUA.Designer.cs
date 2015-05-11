@@ -58,11 +58,11 @@
             this.m_lbl_tien_sua_chua = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
+            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_danh_sach = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_in_hoa_don = new SIS.Controls.Button.SiSButton();
             this.m_cmd_save = new SIS.Controls.Button.SiSButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.m_cmd_in_hoa_don = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_danh_sach = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
@@ -251,7 +251,7 @@
             this.m_fg.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.m_fg.Location = new System.Drawing.Point(6, 46);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Rows.Count = 26;
+            this.m_fg.Rows.Count = 27;
             this.m_fg.Size = new System.Drawing.Size(734, 136);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 23;
@@ -378,6 +378,52 @@
             this.m_pnl_out_place_dm.Size = new System.Drawing.Size(740, 36);
             this.m_pnl_out_place_dm.TabIndex = 20;
             // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_exit.ImageIndex = 12;
+            this.m_cmd_exit.ImageList = this.ImageList;
+            this.m_cmd_exit.Location = new System.Drawing.Point(486, 4);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(176, 28);
+            this.m_cmd_exit.TabIndex = 27;
+            this.m_cmd_exit.Text = "Thoát (Esc)";
+            // 
+            // m_cmd_danh_sach
+            // 
+            this.m_cmd_danh_sach.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_danh_sach.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_danh_sach.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_danh_sach.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_danh_sach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_danh_sach.ImageIndex = 21;
+            this.m_cmd_danh_sach.ImageList = this.ImageList;
+            this.m_cmd_danh_sach.Location = new System.Drawing.Point(298, 4);
+            this.m_cmd_danh_sach.Name = "m_cmd_danh_sach";
+            this.m_cmd_danh_sach.Size = new System.Drawing.Size(188, 28);
+            this.m_cmd_danh_sach.TabIndex = 26;
+            this.m_cmd_danh_sach.Text = "Danh sách phiếu bảo hành";
+            // 
+            // m_cmd_in_hoa_don
+            // 
+            this.m_cmd_in_hoa_don.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_in_hoa_don.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_in_hoa_don.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_in_hoa_don.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_in_hoa_don.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_in_hoa_don.ImageIndex = 15;
+            this.m_cmd_in_hoa_don.ImageList = this.ImageList;
+            this.m_cmd_in_hoa_don.Location = new System.Drawing.Point(165, 4);
+            this.m_cmd_in_hoa_don.Name = "m_cmd_in_hoa_don";
+            this.m_cmd_in_hoa_don.Size = new System.Drawing.Size(133, 28);
+            this.m_cmd_in_hoa_don.TabIndex = 25;
+            this.m_cmd_in_hoa_don.Text = "In phiếu bảo hành";
+            this.m_cmd_in_hoa_don.Visible = false;
+            // 
             // m_cmd_save
             // 
             this.m_cmd_save.AdjustImageLocation = new System.Drawing.Point(0, 0);
@@ -406,52 +452,6 @@
             this.panel2.Size = new System.Drawing.Size(740, 52);
             this.panel2.TabIndex = 21;
             // 
-            // m_cmd_in_hoa_don
-            // 
-            this.m_cmd_in_hoa_don.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_in_hoa_don.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_in_hoa_don.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_in_hoa_don.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_in_hoa_don.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_in_hoa_don.ImageIndex = 15;
-            this.m_cmd_in_hoa_don.ImageList = this.ImageList;
-            this.m_cmd_in_hoa_don.Location = new System.Drawing.Point(165, 4);
-            this.m_cmd_in_hoa_don.Name = "m_cmd_in_hoa_don";
-            this.m_cmd_in_hoa_don.Size = new System.Drawing.Size(133, 28);
-            this.m_cmd_in_hoa_don.TabIndex = 25;
-            this.m_cmd_in_hoa_don.Text = "In phiếu bảo hành";
-            this.m_cmd_in_hoa_don.Visible = false;
-            // 
-            // m_cmd_danh_sach
-            // 
-            this.m_cmd_danh_sach.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_danh_sach.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_danh_sach.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_danh_sach.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_danh_sach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_danh_sach.ImageIndex = 21;
-            this.m_cmd_danh_sach.ImageList = this.ImageList;
-            this.m_cmd_danh_sach.Location = new System.Drawing.Point(298, 4);
-            this.m_cmd_danh_sach.Name = "m_cmd_danh_sach";
-            this.m_cmd_danh_sach.Size = new System.Drawing.Size(188, 28);
-            this.m_cmd_danh_sach.TabIndex = 26;
-            this.m_cmd_danh_sach.Text = "Danh sách phiếu bảo hành";
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(486, 4);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(176, 28);
-            this.m_cmd_exit.TabIndex = 27;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
-            // 
             // F704_V_BAO_HANH_SUA_CHUA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -465,7 +465,7 @@
             this.MinimizeBox = false;
             this.Name = "F704_V_BAO_HANH_SUA_CHUA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "F704 - Lập phiếu bảo hành/sửa chữa";
+            this.Text = "Lập phiếu bảo hành/sửa chữa";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

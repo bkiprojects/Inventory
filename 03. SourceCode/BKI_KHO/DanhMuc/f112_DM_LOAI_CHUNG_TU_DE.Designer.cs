@@ -126,7 +126,7 @@
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 122);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
-            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(301, 36);
+            this.m_pnl_out_place_dm.Size = new System.Drawing.Size(382, 36);
             this.m_pnl_out_place_dm.TabIndex = 22;
             // 
             // m_cmd_save
@@ -138,7 +138,7 @@
             this.m_cmd_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_save.ImageIndex = 10;
             this.m_cmd_save.ImageList = this.ImageList;
-            this.m_cmd_save.Location = new System.Drawing.Point(121, 4);
+            this.m_cmd_save.Location = new System.Drawing.Point(202, 4);
             this.m_cmd_save.Name = "m_cmd_save";
             this.m_cmd_save.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_save.TabIndex = 9;
@@ -155,7 +155,7 @@
             this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_exit.ImageIndex = 12;
             this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(209, 4);
+            this.m_cmd_exit.Location = new System.Drawing.Point(290, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_exit.TabIndex = 11;
@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 158);
+            this.ClientSize = new System.Drawing.Size(382, 158);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Controls.Add(this.m_txt_ghi_chu);
             this.Controls.Add(this.label3);
@@ -176,7 +176,7 @@
             this.Controls.Add(this.label1);
             this.Name = "f112_DM_LOAI_CHUNG_TU_DE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "f112 Cập Nhật Danh Sách Loại Chứng Từ";
+            this.Text = "Cập Nhật Danh Sách Loại Chứng Từ";
             this.Load += new System.EventHandler(this.f112_DM_LOAI_CHUNG_TU_DE_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             this.ResumeLayout(false);

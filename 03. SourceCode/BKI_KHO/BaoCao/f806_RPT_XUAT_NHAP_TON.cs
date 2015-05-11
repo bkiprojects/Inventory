@@ -100,12 +100,12 @@ namespace BKI_KHO
             this.m_cmd_search = new SIS.Controls.Button.SiSButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.m_txt_search = new System.Windows.Forms.TextBox();
             this.m_dat_den_ngay = new System.Windows.Forms.DateTimePicker();
             this.m_dat_tu_ngay = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_dgv)).BeginInit();
             this.panel3.SuspendLayout();
@@ -295,6 +295,15 @@ namespace BKI_KHO
             this.panel3.Size = new System.Drawing.Size(656, 82);
             this.panel3.TabIndex = 39;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 53);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 13);
+            this.label1.TabIndex = 44;
+            this.label1.Text = "Lọc thông tin";
+            // 
             // m_txt_search
             // 
             this.m_txt_search.Location = new System.Drawing.Point(88, 50);
@@ -338,15 +347,6 @@ namespace BKI_KHO
             this.label4.TabIndex = 40;
             this.label4.Text = "Từ ngày";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 13);
-            this.label1.TabIndex = 44;
-            this.label1.Text = "Lọc thông tin";
-            // 
             // f806_RPT_XUAT_NHAP_TON
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -357,7 +357,7 @@ namespace BKI_KHO
             this.Controls.Add(this.m_lbl_title);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f806_RPT_XUAT_NHAP_TON";
-            this.Text = "F806 - Báo cáo xuất nhập tồn theo nhóm hàng";
+            this.Text = "Báo cáo xuất nhập tồn theo nhóm hàng";
             this.Load += new System.EventHandler(this.f806_RPT_XUAT_NHAP_TON_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_dgv)).EndInit();

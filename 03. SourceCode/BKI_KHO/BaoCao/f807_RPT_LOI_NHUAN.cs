@@ -342,7 +342,7 @@ namespace BKI_KHO
             this.Controls.Add(this.m_lbl_title);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f807_RPT_LOI_NHUAN";
-            this.Text = "F807 - Báo cáo lợi nhuận";
+            this.Text = "Báo cáo lợi nhuận";
             this.Load += new System.EventHandler(this.f807_RPT_LOI_NHUAN_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_dgv)).EndInit();

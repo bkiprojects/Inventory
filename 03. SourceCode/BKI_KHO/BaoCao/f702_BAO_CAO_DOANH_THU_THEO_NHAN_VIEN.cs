@@ -365,7 +365,7 @@ namespace BKI_KHO
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "f702_BAO_CAO_DOANH_THU_THEO_NHAN_VIEN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "f702 - Báo cáo doanh thu theo nhân viên";
+            this.Text = "Báo cáo doanh thu theo nhân viên";
             this.Load += new System.EventHandler(this.f702_BAO_CAO_DOANH_THU_THEO_NHAN_VIEN_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();

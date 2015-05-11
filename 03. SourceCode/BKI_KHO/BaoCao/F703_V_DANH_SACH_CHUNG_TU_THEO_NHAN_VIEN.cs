@@ -316,7 +316,7 @@ namespace BKI_KHO
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Name = "F703_V_DANH_SACH_CHUNG_TU_THEO_NHAN_VIEN";
-            this.Text = "F703 - Danh sách chứng từ theo nhân viên";
+            this.Text = "Danh sách chứng từ theo nhân viên";
             this.Load += new System.EventHandler(this.F703_V_DANH_SACH_CHUNG_TU_THEO_NHAN_VIEN_Load);
             this.m_pnl_out_place_dm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).EndInit();
