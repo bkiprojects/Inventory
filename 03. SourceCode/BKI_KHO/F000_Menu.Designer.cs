@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F000_Menu));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.m_cmd_dm_kho = new DevExpress.XtraBars.BarButtonItem();
             this.m_cmd_hang_hoa = new DevExpress.XtraBars.BarButtonItem();
@@ -96,103 +97,140 @@
             // m_cmd_dm_kho
             // 
             this.m_cmd_dm_kho.Caption = "Kho";
+            this.m_cmd_dm_kho.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_dm_kho.Glyph")));
             this.m_cmd_dm_kho.Id = 1;
+            this.m_cmd_dm_kho.LargeGlyph = global::BKI_KHO.Properties.Resources._1431352279_Home;
             this.m_cmd_dm_kho.Name = "m_cmd_dm_kho";
             // 
             // m_cmd_hang_hoa
             // 
             this.m_cmd_hang_hoa.Caption = "Hàng hóa";
+            this.m_cmd_hang_hoa.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_hang_hoa.Glyph")));
             this.m_cmd_hang_hoa.Id = 2;
             this.m_cmd_hang_hoa.Name = "m_cmd_hang_hoa";
+            this.m_cmd_hang_hoa.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // m_cmd_nhom_hang
             // 
             this.m_cmd_nhom_hang.Caption = "Nhóm hàng";
+            this.m_cmd_nhom_hang.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhom_hang.Glyph")));
             this.m_cmd_nhom_hang.Id = 3;
             this.m_cmd_nhom_hang.Name = "m_cmd_nhom_hang";
+            this.m_cmd_nhom_hang.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // m_cmd_don_vi_tinh
             // 
             this.m_cmd_don_vi_tinh.Caption = "Đơn vị tính";
+            this.m_cmd_don_vi_tinh.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_don_vi_tinh.Glyph")));
             this.m_cmd_don_vi_tinh.Id = 4;
+            this.m_cmd_don_vi_tinh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_don_vi_tinh.LargeGlyph")));
             this.m_cmd_don_vi_tinh.Name = "m_cmd_don_vi_tinh";
             // 
             // m_cmd_loai_chung_tu
             // 
             this.m_cmd_loai_chung_tu.Caption = "Loại chứng từ";
+            this.m_cmd_loai_chung_tu.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_loai_chung_tu.Glyph")));
             this.m_cmd_loai_chung_tu.Id = 5;
+            this.m_cmd_loai_chung_tu.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_loai_chung_tu.LargeGlyph")));
             this.m_cmd_loai_chung_tu.Name = "m_cmd_loai_chung_tu";
             // 
             // m_cmd_nhan_vien
             // 
             this.m_cmd_nhan_vien.Caption = "Nhân viên";
+            this.m_cmd_nhan_vien.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhan_vien.Glyph")));
             this.m_cmd_nhan_vien.Id = 6;
+            this.m_cmd_nhan_vien.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhan_vien.LargeGlyph")));
             this.m_cmd_nhan_vien.Name = "m_cmd_nhan_vien";
             // 
             // m_cmd_nhap_kho
             // 
             this.m_cmd_nhap_kho.Caption = "Nhập kho";
+            this.m_cmd_nhap_kho.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhap_kho.Glyph")));
             this.m_cmd_nhap_kho.Id = 7;
+            this.m_cmd_nhap_kho.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhap_kho.LargeGlyph")));
             this.m_cmd_nhap_kho.Name = "m_cmd_nhap_kho";
             // 
             // m_cmd_xuat_kho
             // 
             this.m_cmd_xuat_kho.Caption = "Xuất kho";
+            this.m_cmd_xuat_kho.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_xuat_kho.Glyph")));
             this.m_cmd_xuat_kho.Id = 8;
+            this.m_cmd_xuat_kho.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_xuat_kho.LargeGlyph")));
             this.m_cmd_xuat_kho.Name = "m_cmd_xuat_kho";
             // 
             // m_cmd_nhap_so_du_dau
             // 
             this.m_cmd_nhap_so_du_dau.Caption = "Nhập số dư đầu";
+            this.m_cmd_nhap_so_du_dau.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhap_so_du_dau.Glyph")));
             this.m_cmd_nhap_so_du_dau.Id = 9;
+            this.m_cmd_nhap_so_du_dau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhap_so_du_dau.LargeGlyph")));
             this.m_cmd_nhap_so_du_dau.Name = "m_cmd_nhap_so_du_dau";
             // 
             // m_cmd_bc_loi_nhuan_gop
             // 
             this.m_cmd_bc_loi_nhuan_gop.Caption = "Lợi nhuận gộp";
+            this.m_cmd_bc_loi_nhuan_gop.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_bc_loi_nhuan_gop.Glyph")));
             this.m_cmd_bc_loi_nhuan_gop.Id = 11;
+            this.m_cmd_bc_loi_nhuan_gop.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_bc_loi_nhuan_gop.LargeGlyph")));
             this.m_cmd_bc_loi_nhuan_gop.Name = "m_cmd_bc_loi_nhuan_gop";
             // 
             // m_cmd_bc_doanh_thu_theo_nv
             // 
             this.m_cmd_bc_doanh_thu_theo_nv.Caption = "Doanh thu theo nhân viên";
+            this.m_cmd_bc_doanh_thu_theo_nv.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_bc_doanh_thu_theo_nv.Glyph")));
             this.m_cmd_bc_doanh_thu_theo_nv.Id = 12;
+            this.m_cmd_bc_doanh_thu_theo_nv.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_bc_doanh_thu_theo_nv.LargeGlyph")));
             this.m_cmd_bc_doanh_thu_theo_nv.Name = "m_cmd_bc_doanh_thu_theo_nv";
             // 
             // m_cmd_bc_xuat_nhap_ton
             // 
             this.m_cmd_bc_xuat_nhap_ton.Caption = "Xuất-Nhập-Tồn";
+            this.m_cmd_bc_xuat_nhap_ton.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_bc_xuat_nhap_ton.Glyph")));
             this.m_cmd_bc_xuat_nhap_ton.Id = 13;
+            this.m_cmd_bc_xuat_nhap_ton.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_bc_xuat_nhap_ton.LargeGlyph")));
             this.m_cmd_bc_xuat_nhap_ton.Name = "m_cmd_bc_xuat_nhap_ton";
             // 
             // m_cmd_thoat
             // 
             this.m_cmd_thoat.Caption = "Thoát";
+            this.m_cmd_thoat.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_thoat.Glyph")));
             this.m_cmd_thoat.Id = 15;
             this.m_cmd_thoat.Name = "m_cmd_thoat";
+            this.m_cmd_thoat.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             // 
             // m_cmd_phan_quyen_cho_nhom
             // 
             this.m_cmd_phan_quyen_cho_nhom.Caption = "Phân quyền cho nhóm";
+            this.m_cmd_phan_quyen_cho_nhom.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_phan_quyen_cho_nhom.Glyph")));
             this.m_cmd_phan_quyen_cho_nhom.Id = 16;
+            this.m_cmd_phan_quyen_cho_nhom.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_phan_quyen_cho_nhom.LargeGlyph")));
             this.m_cmd_phan_quyen_cho_nhom.Name = "m_cmd_phan_quyen_cho_nhom";
             // 
             // m_cmd_nguoi_su_dung
             // 
             this.m_cmd_nguoi_su_dung.Caption = "Người sử dụng";
+            this.m_cmd_nguoi_su_dung.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nguoi_su_dung.Glyph")));
             this.m_cmd_nguoi_su_dung.Id = 17;
+            this.m_cmd_nguoi_su_dung.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nguoi_su_dung.LargeGlyph")));
             this.m_cmd_nguoi_su_dung.Name = "m_cmd_nguoi_su_dung";
             // 
             // m_cmd_doi_mat_khau
             // 
             this.m_cmd_doi_mat_khau.Caption = "Đổi mật khẩu";
+            this.m_cmd_doi_mat_khau.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_doi_mat_khau.Glyph")));
             this.m_cmd_doi_mat_khau.Id = 18;
+            this.m_cmd_doi_mat_khau.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_doi_mat_khau.LargeGlyph")));
             this.m_cmd_doi_mat_khau.Name = "m_cmd_doi_mat_khau";
             // 
             // m_cmd_nhom_nsd
             // 
             this.m_cmd_nhom_nsd.Caption = "Nhóm người sử dụng";
+            this.m_cmd_nhom_nsd.Glyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhom_nsd.Glyph")));
             this.m_cmd_nhom_nsd.Id = 19;
+            this.m_cmd_nhom_nsd.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("m_cmd_nhom_nsd.LargeGlyph")));
             this.m_cmd_nhom_nsd.Name = "m_cmd_nhom_nsd";
             // 
             // ribbonPage1
