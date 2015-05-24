@@ -287,6 +287,8 @@ namespace BKI_KHO.DS {
             
             private global::System.Data.DataColumn columnGIA_NHAP;
             
+            private global::System.Data.DataColumn columnGIA_BAN;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public IMPORT_EXCEL_HANG_HOADataTable() {
@@ -354,6 +356,14 @@ namespace BKI_KHO.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GIA_BANColumn {
+                get {
+                    return this.columnGIA_BAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -389,13 +399,14 @@ namespace BKI_KHO.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public IMPORT_EXCEL_HANG_HOARow AddIMPORT_EXCEL_HANG_HOARow(decimal STT, string MA_HANG, string TEN_HANG, decimal GIA_NHAP) {
+            public IMPORT_EXCEL_HANG_HOARow AddIMPORT_EXCEL_HANG_HOARow(decimal STT, string MA_HANG, string TEN_HANG, decimal GIA_NHAP, decimal GIA_BAN) {
                 IMPORT_EXCEL_HANG_HOARow rowIMPORT_EXCEL_HANG_HOARow = ((IMPORT_EXCEL_HANG_HOARow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         STT,
                         MA_HANG,
                         TEN_HANG,
-                        GIA_NHAP};
+                        GIA_NHAP,
+                        GIA_BAN};
                 rowIMPORT_EXCEL_HANG_HOARow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowIMPORT_EXCEL_HANG_HOARow);
                 return rowIMPORT_EXCEL_HANG_HOARow;
@@ -422,6 +433,7 @@ namespace BKI_KHO.DS {
                 this.columnMA_HANG = base.Columns["MA_HANG"];
                 this.columnTEN_HANG = base.Columns["TEN_HANG"];
                 this.columnGIA_NHAP = base.Columns["GIA_NHAP"];
+                this.columnGIA_BAN = base.Columns["GIA_BAN"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -435,6 +447,8 @@ namespace BKI_KHO.DS {
                 base.Columns.Add(this.columnTEN_HANG);
                 this.columnGIA_NHAP = new global::System.Data.DataColumn("GIA_NHAP", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnGIA_NHAP);
+                this.columnGIA_BAN = new global::System.Data.DataColumn("GIA_BAN", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGIA_BAN);
                 this.columnMA_HANG.MaxLength = 50;
                 this.columnTEN_HANG.MaxLength = 200;
             }
@@ -643,6 +657,22 @@ namespace BKI_KHO.DS {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal GIA_BAN {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableIMPORT_EXCEL_HANG_HOA.GIA_BANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'GIA_BAN\' in table \'IMPORT_EXCEL_HANG_HOA\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableIMPORT_EXCEL_HANG_HOA.GIA_BANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsSTTNull() {
                 return this.IsNull(this.tableIMPORT_EXCEL_HANG_HOA.STTColumn);
             }
@@ -687,6 +717,18 @@ namespace BKI_KHO.DS {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetGIA_NHAPNull() {
                 this[this.tableIMPORT_EXCEL_HANG_HOA.GIA_NHAPColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGIA_BANNull() {
+                return this.IsNull(this.tableIMPORT_EXCEL_HANG_HOA.GIA_BANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGIA_BANNull() {
+                this[this.tableIMPORT_EXCEL_HANG_HOA.GIA_BANColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -853,16 +895,18 @@ namespace BKI_KHO.DS.DS_IMPORT_EXCEL_HANG_HOATableAdapters {
             tableMapping.ColumnMappings.Add("MA_HANG", "MA_HANG");
             tableMapping.ColumnMappings.Add("TEN_HANG", "TEN_HANG");
             tableMapping.ColumnMappings.Add("GIA_NHAP", "GIA_NHAP");
+            tableMapping.ColumnMappings.Add("GIA_BAN", "GIA_BAN");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[IMPORT_EXCEL_HANG_HOA] ([STT], [MA_HANG], [TEN_HANG], [GIA_NHA" +
-                "P]) VALUES (@STT, @MA_HANG, @TEN_HANG, @GIA_NHAP)";
+                "P], [GIA_BAN]) VALUES (@STT, @MA_HANG, @TEN_HANG, @GIA_NHAP, @GIA_BAN)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@STT", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 18, 0, "STT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MA_HANG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MA_HANG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TEN_HANG", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TEN_HANG", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GIA_NHAP", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 21, 3, "GIA_NHAP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@GIA_BAN", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 21, 3, "GIA_BAN", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -878,7 +922,7 @@ namespace BKI_KHO.DS.DS_IMPORT_EXCEL_HANG_HOATableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT STT, MA_HANG, TEN_HANG, GIA_NHAP FROM dbo.IMPORT_EXCEL_HANG_HOA";
+            this._commandCollection[0].CommandText = "SELECT STT, MA_HANG, TEN_HANG, GIA_NHAP, GIA_BAN FROM dbo.IMPORT_EXCEL_HANG_HOA";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -939,7 +983,7 @@ namespace BKI_KHO.DS.DS_IMPORT_EXCEL_HANG_HOATableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<decimal> STT, string MA_HANG, string TEN_HANG, global::System.Nullable<decimal> GIA_NHAP) {
+        public virtual int Insert(global::System.Nullable<decimal> STT, string MA_HANG, string TEN_HANG, global::System.Nullable<decimal> GIA_NHAP, global::System.Nullable<decimal> GIA_BAN) {
             if ((STT.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((decimal)(STT.Value));
             }
@@ -963,6 +1007,12 @@ namespace BKI_KHO.DS.DS_IMPORT_EXCEL_HANG_HOATableAdapters {
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((GIA_BAN.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(GIA_BAN.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 

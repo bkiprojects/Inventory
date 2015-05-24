@@ -85,19 +85,19 @@ namespace BKI_KHO
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_import_excel_hang_hoa));
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
+            this.m_cmd_save_data = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_chon_file_excel = new DevExpress.XtraEditors.SimpleButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.m_cbo_nhom_hang = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.m_txt_ma_ct = new System.Windows.Forms.TextBox();
             this.m_lbl_ma_chung_tu = new System.Windows.Forms.Label();
             this.m_dat_ngay_nhap_thuc_te = new System.Windows.Forms.DateTimePicker();
             this.m_lbl_ngay_nhap_thuc_te = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.m_lbl_loading_mes = new System.Windows.Forms.Label();
             this.m_ofd_exel_file = new System.Windows.Forms.OpenFileDialog();
-            this.m_cmd_save_data = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_chon_file_excel = new DevExpress.XtraEditors.SimpleButton();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.panel1.SuspendLayout();
@@ -113,6 +113,26 @@ namespace BKI_KHO
             this.m_pnl_out_place_dm.Padding = new System.Windows.Forms.Padding(4);
             this.m_pnl_out_place_dm.Size = new System.Drawing.Size(686, 42);
             this.m_pnl_out_place_dm.TabIndex = 19;
+            // 
+            // m_cmd_save_data
+            // 
+            this.m_cmd_save_data.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_save_data.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_save_data.Image")));
+            this.m_cmd_save_data.Location = new System.Drawing.Point(137, 4);
+            this.m_cmd_save_data.Name = "m_cmd_save_data";
+            this.m_cmd_save_data.Size = new System.Drawing.Size(128, 34);
+            this.m_cmd_save_data.TabIndex = 43;
+            this.m_cmd_save_data.Text = "Lưu hàng hóa";
+            // 
+            // m_cmd_chon_file_excel
+            // 
+            this.m_cmd_chon_file_excel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_chon_file_excel.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chon_file_excel.Image")));
+            this.m_cmd_chon_file_excel.Location = new System.Drawing.Point(4, 4);
+            this.m_cmd_chon_file_excel.Name = "m_cmd_chon_file_excel";
+            this.m_cmd_chon_file_excel.Size = new System.Drawing.Size(133, 34);
+            this.m_cmd_chon_file_excel.TabIndex = 42;
+            this.m_cmd_chon_file_excel.Text = "Chọn File Excel";
             // 
             // m_fg
             // 
@@ -137,34 +157,6 @@ namespace BKI_KHO
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(686, 100);
             this.panel1.TabIndex = 21;
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "");
-            this.imageList1.Images.SetKeyName(1, "");
-            this.imageList1.Images.SetKeyName(2, "About.png");
-            this.imageList1.Images.SetKeyName(3, "Application.png");
-            this.imageList1.Images.SetKeyName(4, "Back.png");
-            this.imageList1.Images.SetKeyName(5, "Bottom.png");
-            this.imageList1.Images.SetKeyName(6, "Create.png");
-            this.imageList1.Images.SetKeyName(7, "Delete.png");
-            this.imageList1.Images.SetKeyName(8, "Download.png");
-            this.imageList1.Images.SetKeyName(9, "Exit.png");
-            this.imageList1.Images.SetKeyName(10, "Find.png");
-            this.imageList1.Images.SetKeyName(11, "First.png");
-            this.imageList1.Images.SetKeyName(12, "Go back.png");
-            this.imageList1.Images.SetKeyName(13, "Go forward.png");
-            this.imageList1.Images.SetKeyName(14, "Go.png");
-            this.imageList1.Images.SetKeyName(15, "List.png");
-            this.imageList1.Images.SetKeyName(16, "Modify.png");
-            this.imageList1.Images.SetKeyName(17, "No-entry.png");
-            this.imageList1.Images.SetKeyName(18, "Repair.png");
-            this.imageList1.Images.SetKeyName(19, "Report.png");
-            this.imageList1.Images.SetKeyName(20, "Save.png");
-            this.imageList1.Images.SetKeyName(21, "Yes.png");
-            this.imageList1.Images.SetKeyName(22, "excel.ico");
             // 
             // m_cbo_nhom_hang
             // 
@@ -219,6 +211,34 @@ namespace BKI_KHO
             this.m_lbl_ngay_nhap_thuc_te.TabIndex = 7;
             this.m_lbl_ngay_nhap_thuc_te.Text = "Ngày nhập ";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "");
+            this.imageList1.Images.SetKeyName(1, "");
+            this.imageList1.Images.SetKeyName(2, "About.png");
+            this.imageList1.Images.SetKeyName(3, "Application.png");
+            this.imageList1.Images.SetKeyName(4, "Back.png");
+            this.imageList1.Images.SetKeyName(5, "Bottom.png");
+            this.imageList1.Images.SetKeyName(6, "Create.png");
+            this.imageList1.Images.SetKeyName(7, "Delete.png");
+            this.imageList1.Images.SetKeyName(8, "Download.png");
+            this.imageList1.Images.SetKeyName(9, "Exit.png");
+            this.imageList1.Images.SetKeyName(10, "Find.png");
+            this.imageList1.Images.SetKeyName(11, "First.png");
+            this.imageList1.Images.SetKeyName(12, "Go back.png");
+            this.imageList1.Images.SetKeyName(13, "Go forward.png");
+            this.imageList1.Images.SetKeyName(14, "Go.png");
+            this.imageList1.Images.SetKeyName(15, "List.png");
+            this.imageList1.Images.SetKeyName(16, "Modify.png");
+            this.imageList1.Images.SetKeyName(17, "No-entry.png");
+            this.imageList1.Images.SetKeyName(18, "Repair.png");
+            this.imageList1.Images.SetKeyName(19, "Report.png");
+            this.imageList1.Images.SetKeyName(20, "Save.png");
+            this.imageList1.Images.SetKeyName(21, "Yes.png");
+            this.imageList1.Images.SetKeyName(22, "excel.ico");
+            // 
             // m_lbl_loading_mes
             // 
             this.m_lbl_loading_mes.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -235,26 +255,6 @@ namespace BKI_KHO
             // m_ofd_exel_file
             // 
             this.m_ofd_exel_file.FileName = "openFileDialog1";
-            // 
-            // m_cmd_save_data
-            // 
-            this.m_cmd_save_data.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_save_data.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_save_data.Image")));
-            this.m_cmd_save_data.Location = new System.Drawing.Point(137, 4);
-            this.m_cmd_save_data.Name = "m_cmd_save_data";
-            this.m_cmd_save_data.Size = new System.Drawing.Size(128, 34);
-            this.m_cmd_save_data.TabIndex = 43;
-            this.m_cmd_save_data.Text = "Lưu hàng hóa";
-            // 
-            // m_cmd_chon_file_excel
-            // 
-            this.m_cmd_chon_file_excel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_chon_file_excel.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_chon_file_excel.Image")));
-            this.m_cmd_chon_file_excel.Location = new System.Drawing.Point(4, 4);
-            this.m_cmd_chon_file_excel.Name = "m_cmd_chon_file_excel";
-            this.m_cmd_chon_file_excel.Size = new System.Drawing.Size(133, 34);
-            this.m_cmd_chon_file_excel.TabIndex = 42;
-            this.m_cmd_chon_file_excel.Text = "Chọn File Excel";
             // 
             // frm_import_excel_hang_hoa
             // 
@@ -288,6 +288,7 @@ namespace BKI_KHO
 ,MA_HANG = 2
 ,STT = 1
 ,TEN_HANG = 3
+            ,GIA_BAN = 5
 		}			
 		#endregion
 
@@ -329,7 +330,7 @@ namespace BKI_KHO
 			v_htb.Add(IMPORT_EXCEL_HANG_HOA.MA_HANG, e_col_Number.MA_HANG);
 			v_htb.Add(IMPORT_EXCEL_HANG_HOA.STT, e_col_Number.STT);
 			v_htb.Add(IMPORT_EXCEL_HANG_HOA.TEN_HANG, e_col_Number.TEN_HANG);
-									
+            v_htb.Add(IMPORT_EXCEL_HANG_HOA.GIA_BAN, e_col_Number.GIA_BAN);					
 			ITransferDataRow v_obj_trans = new CC1TransferDataRow(i_fg,v_htb,m_ds.IMPORT_EXCEL_HANG_HOA.NewRow());
 			return v_obj_trans;			
 		}
@@ -488,6 +489,7 @@ namespace BKI_KHO
 
             iop_us_gd_chi_tiet_chung_tu.SetTEN_LOAI_CTNull();
             iop_us_gd_chi_tiet_chung_tu.dcID_DVT_THOI_GIAN = CONST_ID_DVT_THOI_GIAN.ID_THANG;
+            iop_us_gd_chi_tiet_chung_tu.dcGIA_BAN = CIPConvert.ToDecimal(m_fg[ip_grid_row, (int)e_col_Number.GIA_BAN]);
         }
         private void save_data() {
             //1. Kiem tra du lieu da ok chua? Neu chua OK thi khong lam gi het!

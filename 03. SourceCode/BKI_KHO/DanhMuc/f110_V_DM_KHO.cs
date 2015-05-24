@@ -153,6 +153,7 @@ namespace BKI_KHO
             this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
             this.m_cmd_exit.TabIndex = 24;
             this.m_cmd_exit.Text = "Thoát (Esc)";
+            this.m_cmd_exit.Visible = false;
             // 
             // m_cmd_delete
             // 

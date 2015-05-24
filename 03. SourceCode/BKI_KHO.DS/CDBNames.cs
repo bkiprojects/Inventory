@@ -9,7 +9,9 @@ namespace BKI_KHO.DS.CDBNames
         public const string MA_HANG = "MA_HANG";
         public const string TEN_HANG = "TEN_HANG";
         public const string GIA_NHAP = "GIA_NHAP";
+        public const string GIA_BAN = "GIA_BAN";
     }
+
 
     public class HT_FORM {
         public const string ID =  "ID";
