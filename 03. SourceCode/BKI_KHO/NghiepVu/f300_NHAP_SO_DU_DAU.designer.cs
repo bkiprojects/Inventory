@@ -48,6 +48,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.m_obj_dialog = new System.Windows.Forms.OpenFileDialog();
+            this.m_cmd_chon_file_excel = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_save_data = new SIS.Controls.Button.SiSButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.m_grb_header.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
@@ -67,6 +71,8 @@
             // 
             // m_grb_header
             // 
+            this.m_grb_header.Controls.Add(this.comboBox1);
+            this.m_grb_header.Controls.Add(this.label2);
             this.m_grb_header.Controls.Add(this.m_cmd_del);
             this.m_grb_header.Controls.Add(this.m_txt_ma_ct);
             this.m_grb_header.Controls.Add(this.m_lbl_ma_chung_tu);
@@ -75,7 +81,7 @@
             this.m_grb_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_grb_header.Location = new System.Drawing.Point(0, 40);
             this.m_grb_header.Name = "m_grb_header";
-            this.m_grb_header.Size = new System.Drawing.Size(952, 86);
+            this.m_grb_header.Size = new System.Drawing.Size(952, 143);
             this.m_grb_header.TabIndex = 1;
             this.m_grb_header.TabStop = false;
             // 
@@ -123,7 +129,7 @@
             // 
             // m_txt_ma_ct
             // 
-            this.m_txt_ma_ct.Location = new System.Drawing.Point(95, 45);
+            this.m_txt_ma_ct.Location = new System.Drawing.Point(134, 45);
             this.m_txt_ma_ct.Name = "m_txt_ma_ct";
             this.m_txt_ma_ct.Size = new System.Drawing.Size(200, 20);
             this.m_txt_ma_ct.TabIndex = 1;
@@ -142,7 +148,7 @@
             // 
             this.m_dat_ngay_nhap_thuc_te.CustomFormat = "dd/MM/yyyy";
             this.m_dat_ngay_nhap_thuc_te.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.m_dat_ngay_nhap_thuc_te.Location = new System.Drawing.Point(95, 19);
+            this.m_dat_ngay_nhap_thuc_te.Location = new System.Drawing.Point(134, 19);
             this.m_dat_ngay_nhap_thuc_te.Name = "m_dat_ngay_nhap_thuc_te";
             this.m_dat_ngay_nhap_thuc_te.Size = new System.Drawing.Size(200, 20);
             this.m_dat_ngay_nhap_thuc_te.TabIndex = 0;
@@ -188,6 +194,8 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.m_cmd_save_data);
+            this.panel1.Controls.Add(this.m_cmd_chon_file_excel);
             this.panel1.Controls.Add(this.m_cmd_exit);
             this.panel1.Controls.Add(this.m_cmd_save);
             this.panel1.Controls.Add(this.label1);
@@ -278,10 +286,10 @@
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 126);
+            this.m_fg.Location = new System.Drawing.Point(0, 183);
             this.m_fg.Name = "m_fg";
             this.m_fg.Rows.Count = 2;
-            this.m_fg.Size = new System.Drawing.Size(952, 374);
+            this.m_fg.Size = new System.Drawing.Size(952, 317);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 3;
             this.m_fg.TabStop = false;
@@ -289,6 +297,51 @@
             // m_obj_dialog
             // 
             this.m_obj_dialog.FileName = "openFileDialog1";
+            // 
+            // m_cmd_chon_file_excel
+            // 
+            this.m_cmd_chon_file_excel.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_chon_file_excel.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_chon_file_excel.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_chon_file_excel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_chon_file_excel.ImageIndex = 19;
+            this.m_cmd_chon_file_excel.ImageList = this.ImageList;
+            this.m_cmd_chon_file_excel.Location = new System.Drawing.Point(532, 1);
+            this.m_cmd_chon_file_excel.Name = "m_cmd_chon_file_excel";
+            this.m_cmd_chon_file_excel.Size = new System.Drawing.Size(121, 28);
+            this.m_cmd_chon_file_excel.TabIndex = 34;
+            this.m_cmd_chon_file_excel.Text = "Chọn File Excel";
+            // 
+            // m_cmd_save_data
+            // 
+            this.m_cmd_save_data.AdjustImageLocation = new System.Drawing.Point(0, 0);
+            this.m_cmd_save_data.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
+            this.m_cmd_save_data.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
+            this.m_cmd_save_data.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.m_cmd_save_data.ImageIndex = 16;
+            this.m_cmd_save_data.ImageList = this.ImageList;
+            this.m_cmd_save_data.Location = new System.Drawing.Point(680, 1);
+            this.m_cmd_save_data.Name = "m_cmd_save_data";
+            this.m_cmd_save_data.Size = new System.Drawing.Size(153, 28);
+            this.m_cmd_save_data.TabIndex = 40;
+            this.m_cmd_save_data.Text = "Lưu danh sách học viên";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(9, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 13);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Nhập vào nhóm hàng";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(134, 77);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(200, 21);
+            this.comboBox1.TabIndex = 5;
             // 
             // f300_NHAP_SO_DU_DAU
             // 
@@ -330,5 +383,9 @@
         internal SIS.Controls.Button.SiSButton m_cmd_del;
         internal SIS.Controls.Button.SiSButton m_cmd_exit;
         internal SIS.Controls.Button.SiSButton m_cmd_save;
+        internal SIS.Controls.Button.SiSButton m_cmd_save_data;
+        internal SIS.Controls.Button.SiSButton m_cmd_chon_file_excel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

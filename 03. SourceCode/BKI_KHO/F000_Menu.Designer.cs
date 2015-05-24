@@ -321,6 +321,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MdiManager)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

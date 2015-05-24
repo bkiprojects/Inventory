@@ -60,11 +60,10 @@ Public Class f101_Dang_Nhap
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(f101_Dang_Nhap))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.m_btnOK = New SIS.Controls.Button.SiSButton()
-        Me.ImageList = New System.Windows.Forms.ImageList(Me.components)
+        Me.ImageList = New System.Windows.Forms.ImageList()
         Me.m_btnCancel = New SIS.Controls.Button.SiSButton()
         Me.m_txtMatKhau = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -80,11 +79,11 @@ Public Class f101_Dang_Nhap
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.SteelBlue
+        Me.Panel1.BackColor = System.Drawing.Color.DarkCyan
         Me.Panel1.Controls.Add(Me.m_btnOK)
         Me.Panel1.Controls.Add(Me.m_btnCancel)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(3, 123)
+        Me.Panel1.Location = New System.Drawing.Point(3, 130)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Padding = New System.Windows.Forms.Padding(3)
         Me.Panel1.Size = New System.Drawing.Size(296, 36)
@@ -98,7 +97,7 @@ Public Class f101_Dang_Nhap
         Me.m_btnOK.Dock = System.Windows.Forms.DockStyle.Right
         Me.m_btnOK.ForeColor = System.Drawing.SystemColors.ControlText
         Me.m_btnOK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.m_btnOK.ImageIndex = 1
+        Me.m_btnOK.ImageIndex = 13
         Me.m_btnOK.ImageList = Me.ImageList
         Me.m_btnOK.Location = New System.Drawing.Point(119, 3)
         Me.m_btnOK.Name = "m_btnOK"
@@ -112,6 +111,26 @@ Public Class f101_Dang_Nhap
         Me.ImageList.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList.Images.SetKeyName(0, "")
         Me.ImageList.Images.SetKeyName(1, "")
+        Me.ImageList.Images.SetKeyName(2, "About.png")
+        Me.ImageList.Images.SetKeyName(3, "Application.png")
+        Me.ImageList.Images.SetKeyName(4, "Back.png")
+        Me.ImageList.Images.SetKeyName(5, "Bottom.png")
+        Me.ImageList.Images.SetKeyName(6, "Create.png")
+        Me.ImageList.Images.SetKeyName(7, "Delete.png")
+        Me.ImageList.Images.SetKeyName(8, "Download.png")
+        Me.ImageList.Images.SetKeyName(9, "Exit.png")
+        Me.ImageList.Images.SetKeyName(10, "Find.png")
+        Me.ImageList.Images.SetKeyName(11, "First.png")
+        Me.ImageList.Images.SetKeyName(12, "Go back.png")
+        Me.ImageList.Images.SetKeyName(13, "Go forward.png")
+        Me.ImageList.Images.SetKeyName(14, "Go.png")
+        Me.ImageList.Images.SetKeyName(15, "List.png")
+        Me.ImageList.Images.SetKeyName(16, "Modify.png")
+        Me.ImageList.Images.SetKeyName(17, "No-entry.png")
+        Me.ImageList.Images.SetKeyName(18, "Repair.png")
+        Me.ImageList.Images.SetKeyName(19, "Report.png")
+        Me.ImageList.Images.SetKeyName(20, "Save.png")
+        Me.ImageList.Images.SetKeyName(21, "Yes.png")
         '
         'm_btnCancel
         '
@@ -121,7 +140,7 @@ Public Class f101_Dang_Nhap
         Me.m_btnCancel.Dock = System.Windows.Forms.DockStyle.Right
         Me.m_btnCancel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.m_btnCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.m_btnCancel.ImageIndex = 0
+        Me.m_btnCancel.ImageIndex = 9
         Me.m_btnCancel.ImageList = Me.ImageList
         Me.m_btnCancel.Location = New System.Drawing.Point(205, 3)
         Me.m_btnCancel.Name = "m_btnCancel"
@@ -174,15 +193,16 @@ Public Class f101_Dang_Nhap
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.DarkCyan
         Me.GroupBox1.Controls.Add(Me.m_txtTenTruyNhap)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.m_txtMatKhau)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Panel1)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.HighlightText
-        Me.GroupBox1.Location = New System.Drawing.Point(0, 8)
+        Me.GroupBox1.Location = New System.Drawing.Point(0, 1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(302, 162)
+        Me.GroupBox1.Size = New System.Drawing.Size(302, 169)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Đăng nhập - Hệ thống quản lý kho"
@@ -206,13 +226,13 @@ Public Class f101_Dang_Nhap
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(286, 20)
         Me.Label3.TabIndex = 1
-        Me.Label3.Text = "Designed by BKIndex Group, 3T Corp.Ltd"
+        Me.Label3.Text = "Designed by QuyDX"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'f101_Dang_Nhap
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.BackColor = System.Drawing.Color.SteelBlue
+        Me.BackColor = System.Drawing.Color.DarkCyan
         Me.ClientSize = New System.Drawing.Size(302, 205)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel2)

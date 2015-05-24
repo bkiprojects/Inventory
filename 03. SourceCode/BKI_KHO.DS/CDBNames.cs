@@ -4,6 +4,13 @@ using System.Text;
 
 namespace BKI_KHO.DS.CDBNames
 {
+    public class IMPORT_EXCEL_HANG_HOA {
+        public const string STT = "STT";
+        public const string MA_HANG = "MA_HANG";
+        public const string TEN_HANG = "TEN_HANG";
+        public const string GIA_NHAP = "GIA_NHAP";
+    }
+
     public class HT_FORM {
         public const string ID =  "ID";
         public const string FORM_NAME =  "FORM_NAME";

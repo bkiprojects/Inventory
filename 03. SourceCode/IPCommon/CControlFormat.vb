@@ -54,7 +54,7 @@ Public Class CControlFormat
     End Function
 
     Private Shared Function getSpecialForeColor() As System.Drawing.Color
-        Return System.Drawing.Color.Maroon
+        Return System.Drawing.Color.Black
     End Function
 
     Private Shared Function getRegularBackColor() As System.Drawing.Color
@@ -335,12 +335,12 @@ Public Class CControlFormat
             '.Dock = System.Windows.Forms.DockStyle.Fill
             .ExtendLastCol = False
             .ForeColor = System.Drawing.Color.Black
-            .Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.Complete
+            .Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.ButtonBar
             .Font = New System.Drawing.Font(C_FontName, C_FormFontSize, Drawing.FontStyle.Regular)
             .Styles.Fixed.Font = New System.Drawing.Font(C_FontName, C_FormFontSize, Drawing.FontStyle.Bold)
             .Styles.Fixed.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter
             .Styles.Fixed.ForeColor = System.Drawing.Color.White
-            .Styles.Fixed.BackColor = System.Drawing.Color.Maroon
+            .Styles.Fixed.BackColor = System.Drawing.Color.CadetBlue
             .Styles.Alternate.BackColor = System.Drawing.Color.FromArgb(CType(241, Byte), CType(252, Byte), CType(218, Byte))
             .Styles.EmptyArea.BackColor = .BackColor
             .Styles.EmptyArea.Border.Style = C1.Win.C1FlexGrid.BorderStyleEnum.None
