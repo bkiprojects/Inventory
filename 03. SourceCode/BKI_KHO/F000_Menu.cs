@@ -197,7 +197,7 @@ namespace BKI_KHO {
 
         void m_cmd_nhap_so_du_dau_ItemClick(object sender, ItemClickEventArgs e) {
             try {
-                f300_NHAP_SO_DU_DAU v_frm = new f300_NHAP_SO_DU_DAU();
+                frm_import_excel_hang_hoa v_frm = new frm_import_excel_hang_hoa();
                 if(IsExistFormName(v_frm)) return;
 
                 v_frm.MdiParent = this;

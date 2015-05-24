@@ -306,8 +306,21 @@ namespace BKI_KHO
 			set_define_events();
 			this.KeyPreview = true;		
 		}
-		private void set_initial_form_load(){						
+        private void load_data_cbo_nhom_hang() {
+            DS_DM_NHOM_HANG v_ds = new DS_DM_NHOM_HANG();
+            US_DM_NHOM_HANG v_us = new US_DM_NHOM_HANG();
+            v_ds.Clear();
+            v_ds.EnforceConstraints = false;
+
+            v_us.FillDataset(v_ds, "where level_mode = 1");
+            m_cbo_nhom_hang.DataSource = v_ds.DM_NHOM_HANG;
+            m_cbo_nhom_hang.ValueMember = DM_NHOM_HANG.ID;
+            m_cbo_nhom_hang.DisplayMember = DM_NHOM_HANG.TEN;
+        }
+		private void set_initial_form_load(){
+            m_dat_ngay_nhap_thuc_te.Value = DateTime.Now.Date;	
 			m_obj_trans = get_trans_object(m_fg);
+            load_data_cbo_nhom_hang();
 			load_data_2_grid();		
 		}	
 		private ITransferDataRow get_trans_object(C1.Win.C1FlexGrid.C1FlexGrid i_fg){
@@ -419,6 +432,100 @@ namespace BKI_KHO
                 }
             }
         }
+
+        private void form_2_us_v_gd_chung_tu(US_GD_CHUNG_TU ip_us_gd_chung_tu) {
+
+            ip_us_gd_chung_tu.dcID_LOAI_CT = CONST_ID_DM_LOAI_CHUNG_TU.ID_NHAP_SO_DU;
+            ip_us_gd_chung_tu.strDIEN_GIAI = "Nhập sô dư đầu hàng hóa cho kho";
+            ip_us_gd_chung_tu.strMA_CT = m_txt_ma_ct.Text;
+
+            ip_us_gd_chung_tu.SetID_TO_CHUC_DICHNull();
+            ip_us_gd_chung_tu.SetID_TO_CHUC_NGUONNull();
+            ip_us_gd_chung_tu.SetID_NGUOI_GIAO_DICHNull();
+
+            ip_us_gd_chung_tu.SetGHI_CHU_1Null();
+            ip_us_gd_chung_tu.SetGHI_CHU_2Null();
+            ip_us_gd_chung_tu.SetGHI_CHU_3Null();
+
+            ip_us_gd_chung_tu.dcID_NGUOI_NHAP = CAppContext_201.getCurrentUserID();
+            ip_us_gd_chung_tu.datNGAY_CT = IP.Core.IPSystemAdmin.CAppContext_201.getCurentDate();
+            ip_us_gd_chung_tu.datNGAY_NHAP = IP.Core.IPSystemAdmin.CAppContext_201.getCurentDate();
+            ip_us_gd_chung_tu.datNGAY_NHAP_CUOI = IP.Core.IPSystemAdmin.CAppContext_201.getCurentDate();
+        }
+        private void grid_row_2_us_gd_chi_tiet_chung_tu(
+            int ip_grid_row
+            , US_V_GD_CHI_TIET_CHUNG_TU iop_us_gd_chi_tiet_chung_tu
+            , US_GD_CHUNG_TU ip_us_gd_chung_tu) {
+
+            iop_us_gd_chi_tiet_chung_tu.dcID_CHUNG_TU
+                = ip_us_gd_chung_tu.dcID;
+
+            iop_us_gd_chi_tiet_chung_tu.SetMA_CTNull();                 //NULL
+            iop_us_gd_chi_tiet_chung_tu.SetNGAY_CTNull();               //NULL
+            iop_us_gd_chi_tiet_chung_tu.SetDIEN_GIAINull();             //NULL
+            iop_us_gd_chi_tiet_chung_tu.SetTONG_TIENNull();             //NULL
+            iop_us_gd_chi_tiet_chung_tu.SetID_TO_CHUC_NGUONNull();      //NULL
+            iop_us_gd_chi_tiet_chung_tu.SetID_NGUOI_GIAO_DICHNull();    //NULL
+            iop_us_gd_chi_tiet_chung_tu.SetID_NGUOI_NHAPNull();         //NULL
+            iop_us_gd_chi_tiet_chung_tu.SetNGAY_NHAP_PMNull();          //NULL
+
+            iop_us_gd_chi_tiet_chung_tu.dcID_NHOM
+                = CIPConvert.ToDecimal(m_cbo_nhom_hang.SelectedValue);
+
+            iop_us_gd_chi_tiet_chung_tu.strMA_HANG
+                = CIPConvert.ToStr(m_fg[ip_grid_row, (int)e_col_Number.MA_HANG]);
+
+            iop_us_gd_chi_tiet_chung_tu.strTEN_HANG_VN
+                = CIPConvert.ToStr(m_fg[ip_grid_row, (int)e_col_Number.TEN_HANG]);
+
+            iop_us_gd_chi_tiet_chung_tu.dcGiA_NHAP
+                = CIPConvert.ToDecimal(m_fg[ip_grid_row, (int)e_col_Number.GIA_NHAP]);
+
+            iop_us_gd_chi_tiet_chung_tu.dcID_TRANG_THAI = CONST_ID_TRANG_THAI_HANG_HOA.ID_DA_NHAP;
+
+
+            iop_us_gd_chi_tiet_chung_tu.dcSO_LUONG = 1;
+
+            iop_us_gd_chi_tiet_chung_tu.SetTEN_LOAI_CTNull();
+            iop_us_gd_chi_tiet_chung_tu.dcID_DVT_THOI_GIAN = CONST_ID_DVT_THOI_GIAN.ID_THANG;
+        }
+        private void save_data() {
+            //1. Kiem tra du lieu da ok chua? Neu chua OK thi khong lam gi het!
+            if(!check_validate_is_ok())
+                return;
+
+            US_GD_CHUNG_TU v_us_gd_chung_tu = new US_GD_CHUNG_TU();
+            US_V_GD_CHI_TIET_CHUNG_TU v_us_gd_chi_tiet_chung_tu = new US_V_GD_CHI_TIET_CHUNG_TU();
+
+            try {
+
+                v_us_gd_chung_tu.BeginTransaction();
+                //2. insert data
+                //2.1 insert chung tu
+                form_2_us_v_gd_chung_tu(v_us_gd_chung_tu);
+                v_us_gd_chung_tu.Insert();
+                v_us_gd_chi_tiet_chung_tu.UseTransOfUSObject(v_us_gd_chung_tu);
+                //2.2 insert hang hoa va gd chi tiet chung tu
+                for(int v_i_cur_row = m_fg.Rows.Fixed; v_i_cur_row < m_fg.Rows.Count - 1; v_i_cur_row++) {
+                    grid_row_2_us_gd_chi_tiet_chung_tu(v_i_cur_row, v_us_gd_chi_tiet_chung_tu, v_us_gd_chung_tu);
+                    v_us_gd_chi_tiet_chung_tu.Insert();
+                }
+                v_us_gd_chung_tu.CommitTransaction();
+            }
+            catch(System.Exception v_e) {
+                if(v_us_gd_chung_tu.is_having_transaction()) {
+                    v_us_gd_chung_tu.Rollback();
+                }
+                throw v_e;
+            }
+
+            //3. Thong bao thanh cong
+            BaseMessages.MsgBox_Infor("Bạn đã cập nhật xong số dư đầu cho hàng hóa!");
+        }
+
+        private bool check_validate_is_ok() {
+            return true;
+        }
 		#endregion
 
 //
@@ -429,6 +536,16 @@ namespace BKI_KHO
         private void set_define_events() {
             m_cmd_chon_file_excel.Click += m_cmd_chon_file_excel_Click;
             this.Load += frm_import_excel_hang_hoa_Load;
+            m_cmd_save_data.Click += m_cmd_save_data_Click;
+        }
+
+        void m_cmd_save_data_Click(object sender, EventArgs e) {
+            try {
+                save_data();
+            }
+            catch(Exception v_e) {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
         }
 
         void m_cmd_chon_file_excel_Click(object sender, EventArgs e) {
