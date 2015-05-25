@@ -17,10 +17,12 @@ namespace BKI_KHO.DanhMuc
 {
     public partial class f302_V_DM_NHOM_HANG_DE : Form
     {
-        public f302_V_DM_NHOM_HANG_DE()
+        public f302_V_DM_NHOM_HANG_DE(string ip_loai_frm)
         {
+            m_loai_frm = ip_loai_frm;
             InitializeComponent();
             format_control();
+
         }
 
         
@@ -31,6 +33,7 @@ namespace BKI_KHO.DanhMuc
 
         DS_DM_NHOM_HANG m_ds_dm_nhom_hang = new DS_DM_NHOM_HANG();
         US_DM_NHOM_HANG m_us_dm_nhom_hang = new US_DM_NHOM_HANG();
+        string m_loai_frm;
         #endregion
 
         #region Public Interface
@@ -38,6 +41,7 @@ namespace BKI_KHO.DanhMuc
         private void format_control()
         {
             CControlFormat.setFormStyle(this, new CAppContext_201());
+            set_define_events();
         }
         public void display_for_insert()
         {
@@ -76,8 +80,15 @@ namespace BKI_KHO.DanhMuc
         {
             DS_DM_NHOM_HANG v_ds = new DS_DM_NHOM_HANG();
             US_DM_NHOM_HANG v_us = new US_DM_NHOM_HANG();
-
-            v_us.FillDataset(v_ds);
+            if(m_loai_frm == "LOAI_NHOM") {
+                //v_us.FillDataset(v_ds, "where level_mode = 0");
+                m_cbo_ten_nhom_cha.Visible = false;
+                m_lbl_ten_nhom_cha.Visible = false;
+            }
+            else {
+                v_us.FillDataset(v_ds, "where level_mode = 0");
+            }
+            
 
             DataRow v_dr = v_ds.DM_NHOM_HANG.NewRow();
             v_dr[DM_NHOM_HANG.ID] = -1;
@@ -112,7 +123,14 @@ namespace BKI_KHO.DanhMuc
                         m_us_dm_nhom_hang.dcID_NHOM_CHA = CIPConvert.ToDecimal(m_cbo_ten_nhom_cha.SelectedValue);
                 }
 
-                m_us_dm_nhom_hang.strMO_TA = m_txt_mo_ta.Text;                                        
+                m_us_dm_nhom_hang.strMO_TA = m_txt_mo_ta.Text;
+                if(m_loai_frm == "LOAI_NHOM") {
+                    m_us_dm_nhom_hang.dcLEVEL_MODE = 1;    
+                }
+                else {
+                    m_us_dm_nhom_hang.dcLEVEL_MODE = 1;    
+                }
+                                       
         }
         private void us_obj_2_form()
         {
@@ -121,6 +139,10 @@ namespace BKI_KHO.DanhMuc
         #endregion
    
         #region Events
+        private void set_define_events() {
+            m_cmd_save.Click += m_cmd_save_Click;
+            m_cmd_exit.Click += m_cmd_exit_Click;
+        }
         private void m_cmd_exit_Click(object sender, EventArgs e)
         {           
             this.Close();

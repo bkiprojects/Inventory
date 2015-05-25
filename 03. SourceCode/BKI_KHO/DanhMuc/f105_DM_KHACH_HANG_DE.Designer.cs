@@ -71,8 +71,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_save = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
             this.m_pnl_out_place_dm.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -474,16 +474,6 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Ngày sinh";
             // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_exit.Image")));
-            this.m_cmd_exit.Location = new System.Drawing.Point(501, 4);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(91, 28);
-            this.m_cmd_exit.TabIndex = 53;
-            this.m_cmd_exit.Text = "Lưu";
-            // 
             // m_cmd_save
             // 
             this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
@@ -491,8 +481,18 @@
             this.m_cmd_save.Location = new System.Drawing.Point(410, 4);
             this.m_cmd_save.Name = "m_cmd_save";
             this.m_cmd_save.Size = new System.Drawing.Size(91, 28);
-            this.m_cmd_save.TabIndex = 54;
+            this.m_cmd_save.TabIndex = 58;
             this.m_cmd_save.Text = "Lưu";
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_exit.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_exit.Image")));
+            this.m_cmd_exit.Location = new System.Drawing.Point(501, 4);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(91, 28);
+            this.m_cmd_exit.TabIndex = 57;
+            this.m_cmd_exit.Text = "Thoát";
             // 
             // f105_DM_KHACH_HANG_DE
             // 

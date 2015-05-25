@@ -143,8 +143,8 @@
             this.m_cmd_save.Location = new System.Drawing.Point(242, 4);
             this.m_cmd_save.Name = "m_cmd_save";
             this.m_cmd_save.Size = new System.Drawing.Size(91, 28);
-            this.m_cmd_save.TabIndex = 56;
-            this.m_cmd_save.Text = "Thoát";
+            this.m_cmd_save.TabIndex = 58;
+            this.m_cmd_save.Text = "Lưu";
             // 
             // m_cmd_exit
             // 
@@ -153,7 +153,7 @@
             this.m_cmd_exit.Location = new System.Drawing.Point(333, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(91, 28);
-            this.m_cmd_exit.TabIndex = 55;
+            this.m_cmd_exit.TabIndex = 57;
             this.m_cmd_exit.Text = "Thoát";
             // 
             // f302_V_DM_NHOM_HANG_DE

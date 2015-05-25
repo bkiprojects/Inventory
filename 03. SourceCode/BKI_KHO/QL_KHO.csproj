@@ -191,6 +191,12 @@
     <Compile Include="DanhMuc\f305_V_DM_HANG_HOA_DE.Designer.cs">
       <DependentUpon>f305_V_DM_HANG_HOA_DE.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhMuc\frmOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmOption.Designer.cs">
+      <DependentUpon>frmOption.cs</DependentUpon>
+    </Compile>
     <Compile Include="F000_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -370,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\f305_V_DM_HANG_HOA_DE.resx">
       <DependentUpon>f305_V_DM_HANG_HOA_DE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmOption.resx">
+      <DependentUpon>frmOption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F000_Menu.resx">
       <DependentUpon>F000_Menu.cs</DependentUpon>

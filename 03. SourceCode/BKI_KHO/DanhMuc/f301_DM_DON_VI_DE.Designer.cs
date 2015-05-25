@@ -160,7 +160,7 @@
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(91, 30);
             this.m_cmd_exit.TabIndex = 55;
-            this.m_cmd_exit.Text = "Lưu";
+            this.m_cmd_exit.Text = "Thoát";
             // 
             // f301_DM_DON_VI_DE
             // 

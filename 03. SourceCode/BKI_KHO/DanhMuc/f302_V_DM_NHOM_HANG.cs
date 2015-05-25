@@ -24,6 +24,7 @@ using BKI_KHO.DS.CDBNames;
 
 using C1.Win.C1FlexGrid;
 using BKI_KHO.DanhMuc;
+using DevExpress.XtraEditors;
 
 namespace BKI_KHO
 {
@@ -416,8 +417,10 @@ namespace BKI_KHO
 
         private void insert_dm_nhom_hang()
         {
-            f302_V_DM_NHOM_HANG_DE v_fDE = new f302_V_DM_NHOM_HANG_DE();
-            v_fDE.display_for_insert();
+            frmOption v_frm = new frmOption();
+            v_frm.ShowDialog();
+            //f302_V_DM_NHOM_HANG_DE v_fDE = new f302_V_DM_NHOM_HANG_DE();
+            //v_fDE.display_for_insert();
             load_data_2_grid();
         }
 
@@ -451,7 +454,7 @@ namespace BKI_KHO
                 grid2us_object(m_us, m_fg.Row);
             }
 
-            f302_V_DM_NHOM_HANG_DE v_fDE = new f302_V_DM_NHOM_HANG_DE();
+            f302_V_DM_NHOM_HANG_DE v_fDE = new f302_V_DM_NHOM_HANG_DE("NHOM");
             v_fDE.display_for_update(m_us_dm_nhom_hang);
             load_data_2_grid();
         }
