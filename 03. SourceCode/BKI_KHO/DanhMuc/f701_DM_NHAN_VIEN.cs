@@ -87,18 +87,18 @@ namespace BKI_KHO
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f701_DM_NHAN_VIEN));
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
+            this.m_cmd_delete = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_update = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_insert = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.m_cmd_view = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.m_pn_top = new System.Windows.Forms.Panel();
+            this.m_lbl_title = new System.Windows.Forms.Label();
             this.m_txt_tim_kiem = new System.Windows.Forms.TextBox();
             this.m_cmd_search = new SIS.Controls.Button.SiSButton();
             this.m_lbl_total_record = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.m_cmd_delete = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_update = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_insert = new DevExpress.XtraEditors.SimpleButton();
-            this.m_lbl_title = new System.Windows.Forms.Label();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.m_pn_top.SuspendLayout();
@@ -145,6 +145,36 @@ namespace BKI_KHO
             this.m_pnl_out_place_dm.Size = new System.Drawing.Size(831, 36);
             this.m_pnl_out_place_dm.TabIndex = 19;
             // 
+            // m_cmd_delete
+            // 
+            this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_delete.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_delete.Image")));
+            this.m_cmd_delete.Location = new System.Drawing.Point(421, 4);
+            this.m_cmd_delete.Name = "m_cmd_delete";
+            this.m_cmd_delete.Size = new System.Drawing.Size(91, 28);
+            this.m_cmd_delete.TabIndex = 51;
+            this.m_cmd_delete.Text = "Xóa";
+            // 
+            // m_cmd_update
+            // 
+            this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_update.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_update.Image")));
+            this.m_cmd_update.Location = new System.Drawing.Point(336, 4);
+            this.m_cmd_update.Name = "m_cmd_update";
+            this.m_cmd_update.Size = new System.Drawing.Size(85, 28);
+            this.m_cmd_update.TabIndex = 50;
+            this.m_cmd_update.Text = "Sửa";
+            // 
+            // m_cmd_insert
+            // 
+            this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_insert.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_insert.Image")));
+            this.m_cmd_insert.Location = new System.Drawing.Point(242, 4);
+            this.m_cmd_insert.Name = "m_cmd_insert";
+            this.m_cmd_insert.Size = new System.Drawing.Size(94, 28);
+            this.m_cmd_insert.TabIndex = 49;
+            this.m_cmd_insert.Text = "Thêm";
+            // 
             // m_cmd_exit
             // 
             this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
@@ -180,9 +210,9 @@ namespace BKI_KHO
             // 
             this.m_fg.ColumnInfo = resources.GetString("m_fg.ColumnInfo");
             this.m_fg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.m_fg.Location = new System.Drawing.Point(0, 83);
+            this.m_fg.Location = new System.Drawing.Point(0, 115);
             this.m_fg.Name = "m_fg";
-            this.m_fg.Size = new System.Drawing.Size(831, 354);
+            this.m_fg.Size = new System.Drawing.Size(831, 322);
             this.m_fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(resources.GetString("m_fg.Styles"));
             this.m_fg.TabIndex = 20;
             // 
@@ -196,8 +226,20 @@ namespace BKI_KHO
             this.m_pn_top.Dock = System.Windows.Forms.DockStyle.Top;
             this.m_pn_top.Location = new System.Drawing.Point(0, 0);
             this.m_pn_top.Name = "m_pn_top";
-            this.m_pn_top.Size = new System.Drawing.Size(831, 83);
+            this.m_pn_top.Size = new System.Drawing.Size(831, 115);
             this.m_pn_top.TabIndex = 21;
+            // 
+            // m_lbl_title
+            // 
+            this.m_lbl_title.Dock = System.Windows.Forms.DockStyle.Top;
+            this.m_lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.m_lbl_title.ForeColor = System.Drawing.Color.Maroon;
+            this.m_lbl_title.Location = new System.Drawing.Point(0, 0);
+            this.m_lbl_title.Name = "m_lbl_title";
+            this.m_lbl_title.Size = new System.Drawing.Size(831, 41);
+            this.m_lbl_title.TabIndex = 44;
+            this.m_lbl_title.Text = "DANH MỤC NHÂN VIÊN";
+            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // m_txt_tim_kiem
             // 
@@ -236,48 +278,6 @@ namespace BKI_KHO
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 25;
             this.label1.Text = "Tìm kiếm";
-            // 
-            // m_cmd_delete
-            // 
-            this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_delete.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_delete.Image")));
-            this.m_cmd_delete.Location = new System.Drawing.Point(421, 4);
-            this.m_cmd_delete.Name = "m_cmd_delete";
-            this.m_cmd_delete.Size = new System.Drawing.Size(91, 28);
-            this.m_cmd_delete.TabIndex = 51;
-            this.m_cmd_delete.Text = "Xóa";
-            // 
-            // m_cmd_update
-            // 
-            this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_update.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_update.Image")));
-            this.m_cmd_update.Location = new System.Drawing.Point(336, 4);
-            this.m_cmd_update.Name = "m_cmd_update";
-            this.m_cmd_update.Size = new System.Drawing.Size(85, 28);
-            this.m_cmd_update.TabIndex = 50;
-            this.m_cmd_update.Text = "Sửa";
-            // 
-            // m_cmd_insert
-            // 
-            this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_insert.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_insert.Image")));
-            this.m_cmd_insert.Location = new System.Drawing.Point(242, 4);
-            this.m_cmd_insert.Name = "m_cmd_insert";
-            this.m_cmd_insert.Size = new System.Drawing.Size(94, 28);
-            this.m_cmd_insert.TabIndex = 49;
-            this.m_cmd_insert.Text = "Thêm";
-            // 
-            // m_lbl_title
-            // 
-            this.m_lbl_title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.m_lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.m_lbl_title.ForeColor = System.Drawing.Color.Maroon;
-            this.m_lbl_title.Location = new System.Drawing.Point(0, 0);
-            this.m_lbl_title.Name = "m_lbl_title";
-            this.m_lbl_title.Size = new System.Drawing.Size(831, 41);
-            this.m_lbl_title.TabIndex = 44;
-            this.m_lbl_title.Text = "DANH MỤC NHÂN VIÊN";
-            this.m_lbl_title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // f701_DM_NHAN_VIEN
             // 

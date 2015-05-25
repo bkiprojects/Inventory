@@ -38,9 +38,9 @@
             this.m_txt_ghi_chu = new System.Windows.Forms.TextBox();
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.m_cmd_save = new DevExpress.XtraEditors.SimpleButton();
             this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,17 +131,6 @@
             this.panel1.Size = new System.Drawing.Size(369, 30);
             this.panel1.TabIndex = 64;
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(369, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(0, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // m_cmd_save
             // 
             this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
@@ -151,6 +140,7 @@
             this.m_cmd_save.Size = new System.Drawing.Size(91, 30);
             this.m_cmd_save.TabIndex = 56;
             this.m_cmd_save.Text = "Lưu";
+            this.m_cmd_save.Click += new System.EventHandler(this.m_cmd_save_Click_1);
             // 
             // m_cmd_exit
             // 
@@ -161,6 +151,18 @@
             this.m_cmd_exit.Size = new System.Drawing.Size(91, 30);
             this.m_cmd_exit.TabIndex = 55;
             this.m_cmd_exit.Text = "Thoát";
+            this.m_cmd_exit.Click += new System.EventHandler(this.m_cmd_exit_Click_1);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Location = new System.Drawing.Point(369, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(0, 30);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // f301_DM_DON_VI_DE
             // 

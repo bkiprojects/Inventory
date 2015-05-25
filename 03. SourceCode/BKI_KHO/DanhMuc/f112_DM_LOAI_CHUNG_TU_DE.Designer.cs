@@ -138,6 +138,7 @@
             this.m_cmd_save.Size = new System.Drawing.Size(91, 28);
             this.m_cmd_save.TabIndex = 58;
             this.m_cmd_save.Text = "Lưu";
+            this.m_cmd_save.Click += new System.EventHandler(this.m_cmd_save_Click_1);
             // 
             // m_cmd_exit
             // 
@@ -148,6 +149,7 @@
             this.m_cmd_exit.Size = new System.Drawing.Size(91, 28);
             this.m_cmd_exit.TabIndex = 57;
             this.m_cmd_exit.Text = "Thoát";
+            this.m_cmd_exit.Click += new System.EventHandler(this.m_cmd_exit_Click_1);
             // 
             // f112_DM_LOAI_CHUNG_TU_DE
             // 

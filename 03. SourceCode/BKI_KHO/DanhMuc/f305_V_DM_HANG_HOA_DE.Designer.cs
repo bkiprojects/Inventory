@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(f305_V_DM_HANG_HOA_DE));
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_cmd_save = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
             this.button1 = new System.Windows.Forms.Button();
             this.m_cbo_trang_thai = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.m_txt_ma_hang = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.m_cbo_don_vi_tinh = new System.Windows.Forms.ComboBox();
-            this.m_cmd_save = new DevExpress.XtraEditors.SimpleButton();
-            this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,6 +91,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(520, 33);
             this.panel1.TabIndex = 87;
+            // 
+            // m_cmd_save
+            // 
+            this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_save.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_save.Image")));
+            this.m_cmd_save.Location = new System.Drawing.Point(336, 0);
+            this.m_cmd_save.Name = "m_cmd_save";
+            this.m_cmd_save.Size = new System.Drawing.Size(91, 31);
+            this.m_cmd_save.TabIndex = 58;
+            this.m_cmd_save.Text = "Lưu";
+            this.m_cmd_save.Click += new System.EventHandler(this.m_cmd_save_Click_1);
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_exit.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_exit.Image")));
+            this.m_cmd_exit.Location = new System.Drawing.Point(427, 0);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(91, 31);
+            this.m_cmd_exit.TabIndex = 57;
+            this.m_cmd_exit.Text = "Thoát";
+            this.m_cmd_exit.Click += new System.EventHandler(this.m_cmd_exit_Click_1);
             // 
             // button1
             // 
@@ -223,26 +245,6 @@
             this.m_cbo_don_vi_tinh.Name = "m_cbo_don_vi_tinh";
             this.m_cbo_don_vi_tinh.Size = new System.Drawing.Size(88, 21);
             this.m_cbo_don_vi_tinh.TabIndex = 134;
-            // 
-            // m_cmd_save
-            // 
-            this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_save.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_save.Image")));
-            this.m_cmd_save.Location = new System.Drawing.Point(336, 0);
-            this.m_cmd_save.Name = "m_cmd_save";
-            this.m_cmd_save.Size = new System.Drawing.Size(91, 31);
-            this.m_cmd_save.TabIndex = 58;
-            this.m_cmd_save.Text = "Lưu";
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_exit.Image")));
-            this.m_cmd_exit.Location = new System.Drawing.Point(427, 0);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(91, 31);
-            this.m_cmd_exit.TabIndex = 57;
-            this.m_cmd_exit.Text = "Thoát";
             // 
             // f305_V_DM_HANG_HOA_DE
             // 

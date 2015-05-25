@@ -125,7 +125,7 @@ namespace BKI_KHO.DanhMuc
 
                 m_us_dm_nhom_hang.strMO_TA = m_txt_mo_ta.Text;
                 if(m_loai_frm == "LOAI_NHOM") {
-                    m_us_dm_nhom_hang.dcLEVEL_MODE = 1;    
+                    m_us_dm_nhom_hang.dcLEVEL_MODE = 0;   
                 }
                 else {
                     m_us_dm_nhom_hang.dcLEVEL_MODE = 1;    

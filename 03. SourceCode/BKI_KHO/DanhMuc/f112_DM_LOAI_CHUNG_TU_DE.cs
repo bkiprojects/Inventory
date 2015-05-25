@@ -136,5 +136,25 @@ namespace BKI_KHO.DanhMuc
         {
 
         }
+
+        private void m_cmd_save_Click_1(object sender, EventArgs e) {
+            try {
+                save_data();
+            }
+            catch(Exception v_e) {
+                
+                throw v_e;
+            }
+        }
+
+        private void m_cmd_exit_Click_1(object sender, EventArgs e) {
+            try {
+                this.Close();
+            }
+            catch(Exception v_e) {
+                
+                throw v_e;
+            }
+        }
     }
 }

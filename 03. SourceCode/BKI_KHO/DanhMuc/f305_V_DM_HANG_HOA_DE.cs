@@ -188,5 +188,23 @@ namespace BKI_KHO.DanhMuc
             }
         }
         #endregion
+
+        private void m_cmd_save_Click_1(object sender, EventArgs e) {
+            try {
+                save_data();
+            }
+            catch(System.Exception v_e) {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
+
+        private void m_cmd_exit_Click_1(object sender, EventArgs e) {
+            try {
+                this.Close();
+            }
+            catch(System.Exception v_e) {
+                CSystemLog_301.ExceptionHandle(v_e);
+            }
+        }
     }
 }
