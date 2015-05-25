@@ -38,10 +38,9 @@
             this.m_txt_ghi_chu = new System.Windows.Forms.TextBox();
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.m_cmd_save = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_refresh = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.m_cmd_save = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,7 +123,6 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.m_cmd_save);
-            this.panel1.Controls.Add(this.m_cmd_refresh);
             this.panel1.Controls.Add(this.m_cmd_exit);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -132,54 +130,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(369, 30);
             this.panel1.TabIndex = 64;
-            // 
-            // m_cmd_save
-            // 
-            this.m_cmd_save.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_save.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_save.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_save.ImageIndex = 10;
-            this.m_cmd_save.ImageList = this.ImageList;
-            this.m_cmd_save.Location = new System.Drawing.Point(146, 0);
-            this.m_cmd_save.Name = "m_cmd_save";
-            this.m_cmd_save.Size = new System.Drawing.Size(73, 30);
-            this.m_cmd_save.TabIndex = 34;
-            this.m_cmd_save.Text = "&Lưu";
-            this.m_cmd_save.Click += new System.EventHandler(this.m_cmd_save_Click);
-            // 
-            // m_cmd_refresh
-            // 
-            this.m_cmd_refresh.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_refresh.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_refresh.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_refresh.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_refresh.ImageIndex = 9;
-            this.m_cmd_refresh.ImageList = this.ImageList;
-            this.m_cmd_refresh.Location = new System.Drawing.Point(219, 0);
-            this.m_cmd_refresh.Name = "m_cmd_refresh";
-            this.m_cmd_refresh.Size = new System.Drawing.Size(68, 30);
-            this.m_cmd_refresh.TabIndex = 35;
-            this.m_cmd_refresh.Text = "L&àm lại";
-            // 
-            // m_cmd_exit
-            // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(287, 0);
-            this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(82, 30);
-            this.m_cmd_exit.TabIndex = 36;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
-            this.m_cmd_exit.Click += new System.EventHandler(this.m_cmd_exit_Click);
             // 
             // button1
             // 
@@ -192,10 +142,31 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // m_cmd_save
+            // 
+            this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_save.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_save.Image")));
+            this.m_cmd_save.Location = new System.Drawing.Point(187, 0);
+            this.m_cmd_save.Name = "m_cmd_save";
+            this.m_cmd_save.Size = new System.Drawing.Size(91, 30);
+            this.m_cmd_save.TabIndex = 56;
+            this.m_cmd_save.Text = "Lưu";
+            // 
+            // m_cmd_exit
+            // 
+            this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.m_cmd_exit.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_exit.Image")));
+            this.m_cmd_exit.Location = new System.Drawing.Point(278, 0);
+            this.m_cmd_exit.Name = "m_cmd_exit";
+            this.m_cmd_exit.Size = new System.Drawing.Size(91, 30);
+            this.m_cmd_exit.TabIndex = 55;
+            this.m_cmd_exit.Text = "Lưu";
+            // 
             // f301_DM_DON_VI_DE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(369, 181);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.m_txt_ghi_chu);
@@ -222,9 +193,8 @@
         private System.Windows.Forms.TextBox m_txt_ghi_chu;
         internal System.Windows.Forms.ImageList ImageList;
         private System.Windows.Forms.Panel panel1;
-        internal SIS.Controls.Button.SiSButton m_cmd_save;
-        internal SIS.Controls.Button.SiSButton m_cmd_refresh;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
         private System.Windows.Forms.Button button1;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_save;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_exit;
     }
 }

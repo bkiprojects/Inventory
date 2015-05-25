@@ -33,15 +33,15 @@ namespace BKI_KHO {
         internal System.Windows.Forms.ImageList ImageList;
         internal System.Windows.Forms.Panel m_pnl_out_place_dm;
         private C1.Win.C1FlexGrid.C1FlexGrid m_fg;
-        internal SIS.Controls.Button.SiSButton m_cmd_insert;
         private TextBox m_txt_search;
         internal SIS.Controls.Button.SiSButton m_cmd_search;
         private Label m_lbl_tim_kiem;
         private Label m_lbl_title;
         private Panel panel1;
         internal SIS.Controls.Button.SiSButton m_cmd_exit;
-        internal SIS.Controls.Button.SiSButton m_cmd_delete;
-        internal SIS.Controls.Button.SiSButton m_cmd_update;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_delete;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_update;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_insert;
         private System.ComponentModel.IContainer components;
 
         public f301_DM_DON_VI() {
@@ -79,15 +79,15 @@ namespace BKI_KHO {
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
             this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_delete = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_update = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_insert = new SIS.Controls.Button.SiSButton();
             this.m_fg = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.m_txt_search = new System.Windows.Forms.TextBox();
             this.m_cmd_search = new SIS.Controls.Button.SiSButton();
             this.m_lbl_tim_kiem = new System.Windows.Forms.Label();
             this.m_lbl_title = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.m_cmd_delete = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_update = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_insert = new DevExpress.XtraEditors.SimpleButton();
             this.m_pnl_out_place_dm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_fg)).BeginInit();
             this.panel1.SuspendLayout();
@@ -122,10 +122,10 @@ namespace BKI_KHO {
             // 
             // m_pnl_out_place_dm
             // 
-            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_delete);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_update);
             this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_insert);
+            this.m_pnl_out_place_dm.Controls.Add(this.m_cmd_exit);
             this.m_pnl_out_place_dm.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.m_pnl_out_place_dm.Location = new System.Drawing.Point(0, 335);
             this.m_pnl_out_place_dm.Name = "m_pnl_out_place_dm";
@@ -142,56 +142,12 @@ namespace BKI_KHO {
             this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_cmd_exit.ImageIndex = 12;
             this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(286, 4);
+            this.m_cmd_exit.Location = new System.Drawing.Point(4, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
             this.m_cmd_exit.Size = new System.Drawing.Size(98, 28);
             this.m_cmd_exit.TabIndex = 17;
             this.m_cmd_exit.Text = "Thoát (Esc)";
-            // 
-            // m_cmd_delete
-            // 
-            this.m_cmd_delete.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_delete.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_delete.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_delete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_delete.ImageIndex = 4;
-            this.m_cmd_delete.ImageList = this.ImageList;
-            this.m_cmd_delete.Location = new System.Drawing.Point(196, 4);
-            this.m_cmd_delete.Name = "m_cmd_delete";
-            this.m_cmd_delete.Size = new System.Drawing.Size(90, 28);
-            this.m_cmd_delete.TabIndex = 16;
-            this.m_cmd_delete.Text = "&Xoá";
-            // 
-            // m_cmd_update
-            // 
-            this.m_cmd_update.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_update.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_update.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_update.ImageIndex = 3;
-            this.m_cmd_update.ImageList = this.ImageList;
-            this.m_cmd_update.Location = new System.Drawing.Point(103, 4);
-            this.m_cmd_update.Name = "m_cmd_update";
-            this.m_cmd_update.Size = new System.Drawing.Size(93, 28);
-            this.m_cmd_update.TabIndex = 15;
-            this.m_cmd_update.Text = "&Sửa";
-            // 
-            // m_cmd_insert
-            // 
-            this.m_cmd_insert.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_insert.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_insert.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Left;
-            this.m_cmd_insert.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_insert.ImageIndex = 2;
-            this.m_cmd_insert.ImageList = this.ImageList;
-            this.m_cmd_insert.Location = new System.Drawing.Point(4, 4);
-            this.m_cmd_insert.Name = "m_cmd_insert";
-            this.m_cmd_insert.Size = new System.Drawing.Size(99, 28);
-            this.m_cmd_insert.TabIndex = 12;
-            this.m_cmd_insert.Text = "&Thêm";
+            this.m_cmd_exit.Visible = false;
             // 
             // m_fg
             // 
@@ -261,6 +217,36 @@ namespace BKI_KHO {
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 44);
             this.panel1.TabIndex = 44;
+            // 
+            // m_cmd_delete
+            // 
+            this.m_cmd_delete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_delete.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_delete.Image")));
+            this.m_cmd_delete.Location = new System.Drawing.Point(281, 4);
+            this.m_cmd_delete.Name = "m_cmd_delete";
+            this.m_cmd_delete.Size = new System.Drawing.Size(91, 28);
+            this.m_cmd_delete.TabIndex = 51;
+            this.m_cmd_delete.Text = "Xóa";
+            // 
+            // m_cmd_update
+            // 
+            this.m_cmd_update.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_update.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_update.Image")));
+            this.m_cmd_update.Location = new System.Drawing.Point(196, 4);
+            this.m_cmd_update.Name = "m_cmd_update";
+            this.m_cmd_update.Size = new System.Drawing.Size(85, 28);
+            this.m_cmd_update.TabIndex = 50;
+            this.m_cmd_update.Text = "Sửa";
+            // 
+            // m_cmd_insert
+            // 
+            this.m_cmd_insert.Dock = System.Windows.Forms.DockStyle.Left;
+            this.m_cmd_insert.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_insert.Image")));
+            this.m_cmd_insert.Location = new System.Drawing.Point(102, 4);
+            this.m_cmd_insert.Name = "m_cmd_insert";
+            this.m_cmd_insert.Size = new System.Drawing.Size(94, 28);
+            this.m_cmd_insert.TabIndex = 49;
+            this.m_cmd_insert.Text = "Thêm";
             // 
             // f301_DM_DON_VI
             // 

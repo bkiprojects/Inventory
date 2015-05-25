@@ -44,8 +44,8 @@
             this.ImageList = new System.Windows.Forms.ImageList(this.components);
             this.m_cbo_ten = new System.Windows.Forms.ComboBox();
             this.m_pnl_out_place_dm = new System.Windows.Forms.Panel();
-            this.m_cmd_save = new SIS.Controls.Button.SiSButton();
-            this.m_cmd_exit = new SIS.Controls.Button.SiSButton();
+            this.m_cmd_save = new DevExpress.XtraEditors.SimpleButton();
+            this.m_cmd_exit = new DevExpress.XtraEditors.SimpleButton();
             this.m_pnl_out_place_dm.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -186,41 +186,29 @@
             // 
             // m_cmd_save
             // 
-            this.m_cmd_save.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_save.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_save.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
             this.m_cmd_save.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_save.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_save.ImageIndex = 10;
-            this.m_cmd_save.ImageList = this.ImageList;
-            this.m_cmd_save.Location = new System.Drawing.Point(365, 4);
+            this.m_cmd_save.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_save.Image")));
+            this.m_cmd_save.Location = new System.Drawing.Point(359, 4);
             this.m_cmd_save.Name = "m_cmd_save";
-            this.m_cmd_save.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_save.TabIndex = 0;
-            this.m_cmd_save.Text = "&Lưu";
-            this.m_cmd_save.Click += new System.EventHandler(this.m_cmd_save_Click_1);
+            this.m_cmd_save.Size = new System.Drawing.Size(91, 28);
+            this.m_cmd_save.TabIndex = 56;
+            this.m_cmd_save.Text = "Lưu";
             // 
             // m_cmd_exit
             // 
-            this.m_cmd_exit.AdjustImageLocation = new System.Drawing.Point(0, 0);
-            this.m_cmd_exit.BtnShape = SIS.Controls.Button.emunType.BtnShape.Rectangle;
-            this.m_cmd_exit.BtnStyle = SIS.Controls.Button.emunType.XPStyle.Default;
-            this.m_cmd_exit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.m_cmd_exit.Dock = System.Windows.Forms.DockStyle.Right;
-            this.m_cmd_exit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_cmd_exit.ImageIndex = 12;
-            this.m_cmd_exit.ImageList = this.ImageList;
-            this.m_cmd_exit.Location = new System.Drawing.Point(453, 4);
+            this.m_cmd_exit.Image = ((System.Drawing.Image)(resources.GetObject("m_cmd_exit.Image")));
+            this.m_cmd_exit.Location = new System.Drawing.Point(450, 4);
             this.m_cmd_exit.Name = "m_cmd_exit";
-            this.m_cmd_exit.Size = new System.Drawing.Size(88, 28);
-            this.m_cmd_exit.TabIndex = 1;
-            this.m_cmd_exit.Text = "Thoát (Esc)";
-            this.m_cmd_exit.Click += new System.EventHandler(this.m_cmd_exit_Click);
+            this.m_cmd_exit.Size = new System.Drawing.Size(91, 28);
+            this.m_cmd_exit.TabIndex = 55;
+            this.m_cmd_exit.Text = "Lưu";
             // 
             // f111_V_DM_KHO_DE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(545, 249);
             this.Controls.Add(this.m_pnl_out_place_dm);
             this.Controls.Add(this.m_cbo_ten);
@@ -260,7 +248,7 @@
         internal System.Windows.Forms.ImageList ImageList;
         private System.Windows.Forms.ComboBox m_cbo_ten;
         internal System.Windows.Forms.Panel m_pnl_out_place_dm;
-        internal SIS.Controls.Button.SiSButton m_cmd_exit;
-        internal SIS.Controls.Button.SiSButton m_cmd_save;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_save;
+        private DevExpress.XtraEditors.SimpleButton m_cmd_exit;
     }
 }
