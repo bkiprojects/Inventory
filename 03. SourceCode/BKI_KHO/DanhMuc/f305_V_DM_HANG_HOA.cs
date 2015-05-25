@@ -327,13 +327,11 @@ namespace BKI_KHO {
             this.gridView1.GroupCount = 1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.AutoExpandAllGroups = true;
-            this.gridView1.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditForm;
             this.gridView1.OptionsBehavior.ReadOnly = true;
             this.gridView1.OptionsView.ShowFooter = true;
             this.gridView1.SortInfo.AddRange(new DevExpress.XtraGrid.Columns.GridColumnSortInfo[] {
             new DevExpress.XtraGrid.Columns.GridColumnSortInfo(this.TEN_NHOM, DevExpress.Data.ColumnSortOrder.Ascending)});
-            this.gridView1.ValidateRow += new DevExpress.XtraGrid.Views.Base.ValidateRowEventHandler(this.gridView1_ValidateRow);
-            this.gridView1.RowUpdated += new DevExpress.XtraGrid.Views.Base.RowObjectEventHandler(this.gridView1_RowUpdated);
+            
             // 
             // TEN_NHOM
             // 
@@ -489,7 +487,7 @@ namespace BKI_KHO {
             m_fg.Tree.Style = TreeStyleFlags.SimpleLeaf;
             CGridUtils.AddSearch_Handlers(m_fg);
             m_cmd_view.Visible = false;
-            m_cmd_insert.Visible = false;
+            //m_cmd_insert.Visible = false;
             //m_cmd_update.Visible = false;
             //m_cmd_delete.Visible = false;
             CGridUtils.MakeSoTTofRowNotIsNode(0, m_fg, true);
@@ -583,24 +581,51 @@ namespace BKI_KHO {
             //    return;
             //}
             //grid2us_object(m_us, m_fg.Row);
-            //f305_V_DM_HANG_HOA_DE v_fDE = new f305_V_DM_HANG_HOA_DE();
-            //v_fDE.display_for_update(m_us);
-            //load_data_2_grid();
+            if(gridView1.GetRowLevel(gridView1.FocusedRowHandle) == 0) {
+                return;
+            }
+            DataRow v_dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            US_V_DM_HANG_HOA v_us_v_dm_hang_hoa = new US_V_DM_HANG_HOA(CIPConvert.ToDecimal(v_dr["ID"]));
+
+            f305_V_DM_HANG_HOA_DE v_fDE = new f305_V_DM_HANG_HOA_DE();
+            v_fDE.display_for_update(v_us_v_dm_hang_hoa);
+            load_data_2_grid();
         }
 
         private void delete_v_dm_hang_hoa() {
-            if(!CGridUtils.IsThere_Any_NonFixed_Row(m_fg))
-                return;
-            if(!CGridUtils.isValid_NonFixed_RowIndex(m_fg, m_fg.Row))
-                return;
-            if(m_fg.Rows[m_fg.Row].IsNode == true) {
-                BaseMessages.MsgBox_Error("Không được xóa nhóm cha!");
+            //if(!CGridUtils.IsThere_Any_NonFixed_Row(m_fg))
+            //    return;
+            //if(!CGridUtils.isValid_NonFixed_RowIndex(m_fg, m_fg.Row))
+            //    return;
+            //if(m_fg.Rows[m_fg.Row].IsNode == true) {
+            //    BaseMessages.MsgBox_Error("Không được xóa nhóm cha!");
+            //    return;
+            //}
+            //if(BaseMessages.askUser_DataCouldBeDeleted(8) != BaseMessages.IsDataCouldBeDeleted.CouldBeDeleted)
+            //    return;
+            //US_V_DM_HANG_HOA v_us = new US_V_DM_HANG_HOA();
+            //grid2us_object(v_us, m_fg.Row);
+            //try {
+            //    v_us.BeginTransaction();
+            //    v_us.Delete();
+            //    v_us.CommitTransaction();
+            //    load_data_2_grid();
+            //}
+            //catch(Exception v_e) {
+            //    v_us.Rollback();
+            //    CDBExceptionHandler v_objErrHandler = new CDBExceptionHandler(v_e,
+            //        new CDBClientDBExceptionInterpret());
+            //    v_objErrHandler.showErrorMessage();
+            //}
+            if(gridView1.GetRowLevel(gridView1.FocusedRowHandle) == 0) {
                 return;
             }
-            if(BaseMessages.askUser_DataCouldBeDeleted(8) != BaseMessages.IsDataCouldBeDeleted.CouldBeDeleted)
+            DataRow v_dr = gridView1.GetDataRow(gridView1.FocusedRowHandle);
+            US_V_DM_HANG_HOA v_us = new US_V_DM_HANG_HOA(CIPConvert.ToDecimal(v_dr["ID"]));
+            DialogResult v_dlg = XtraMessageBox.Show("Nếu xóa sản phẩm này thì tất cả dữ liệu về sản phẩm sẽ xóa theo. Yes để xóa", "THÔNG BÁO", MessageBoxButtons.YesNo);
+            if(v_dlg == System.Windows.Forms.DialogResult.No) {
                 return;
-            US_V_DM_HANG_HOA v_us = new US_V_DM_HANG_HOA();
-            grid2us_object(v_us, m_fg.Row);
+            }
             try {
                 v_us.BeginTransaction();
                 v_us.Delete();
@@ -741,31 +766,8 @@ namespace BKI_KHO {
             }
         }
 
-        private void gridView1_RowUpdated(object sender, DevExpress.XtraGrid.Views.Base.RowObjectEventArgs e) {
-            try {
-                var row = e.Row;
-                var isNew = gridView1.IsNewItemRow(e.RowHandle);
 
-                if(row!= null) {
-                    
-                }
-            }
-            catch(Exception v_e) {
-                
-                throw v_e;
-            }
-        }
 
-        private void gridView1_ValidateRow(object sender, DevExpress.XtraGrid.Views.Base.ValidateRowEventArgs e) {
-            try {
-                grid_2_us_obj((DataRowView)e.Row);
-                m_us.Update();
-            }
-            catch(Exception v_e) {
-
-                CSystemLog_301.ExceptionHandle(v_e);
-            }
-        }
 
 
     }

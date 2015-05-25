@@ -83,7 +83,7 @@ namespace BKI_KHO.DanhMuc
             US_DM_NHOM_HANG v_us_dm_hang_hoa = new US_DM_NHOM_HANG();
             DS_DM_NHOM_HANG v_ds_dm_hang_hoa = new DS_DM_NHOM_HANG();
 
-            v_us_dm_hang_hoa.FillDataset(v_ds_dm_hang_hoa);
+            v_us_dm_hang_hoa.FillDataset(v_ds_dm_hang_hoa, "where level_mode = 1");
             m_cbo_nhom.ValueMember = DM_NHOM_HANG.ID;
             m_cbo_nhom.DisplayMember = DM_NHOM_HANG.TEN;
 
@@ -107,6 +107,7 @@ namespace BKI_KHO.DanhMuc
             m_cbo_trang_thai.SelectedValue = m_us_v_dm_hang_hoa.dcID_TRANG_THAI;
             m_txt_gia_nhap.Text = CIPConvert.ToStr(m_us_v_dm_hang_hoa.dcGiA_NHAP);
             m_txt_gia_ban.Text = CIPConvert.ToStr(m_us_v_dm_hang_hoa.dcGIA_BAN);
+            m_cbo_don_vi_tinh.SelectedValue = m_us_v_dm_hang_hoa.dcID_DON_VI;
             m_cbo_don_vi_tinh.SelectedValue = m_us_v_dm_hang_hoa.dcID_DON_VI;
         }
         private bool is_validate_data_ok()
